@@ -14,13 +14,13 @@
     padding-bottom: 20px;
     text-decoration: none;
     display: block;
-    color: #B670ED;
+    color: #9F55C1;
     padding-left: 8px;
     padding-top: 10px;
 }
 
 #logo a:link, a:hover, a:visited, a:active, a:focus {
-    color: #B98DDD;
+    color: #9F55C1;
     text-decoration: none;
 }
 
@@ -38,7 +38,7 @@
   }
 
   .vertical-menu a:hover {
-    color: #B98DDD;
+    color: #9F55C1;
   }
 
 #back_button {
@@ -52,7 +52,7 @@
 .next_button {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
-    color: #B98DDD;
+    color: #9F55C1;
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -100,6 +100,7 @@
 
 .projects_text p {
     padding-bottom: 12px;
+    color: gray;
 }
 
 
@@ -185,7 +186,7 @@
 .about {
     display: block;
     padding-left: 400px;
-    padding-top: 120px;
+    padding-top: 100px;
     line-height: 400%;
 }
 .about a {
@@ -208,7 +209,7 @@
     left: -80px;
     display: block;
     padding: 20px;
-    color: #B98DDD;
+    color: #9F55C1;
 }
 
 .about_line {
@@ -228,6 +229,7 @@
 
 .work_page p {
     padding-bottom: 10px;
+    width: 600px;
 }
 
 .work_page h2 {
@@ -241,7 +243,7 @@
 }
 
 .work_page img {
-    width: 400px;
+    width: 600px;
     padding-top: 6px;
     padding-bottom: 6px;
 }
@@ -249,6 +251,14 @@
 .work_page ul {
     padding-left: 20px;
 }
+
+/* .delta_work_page img {
+    width: 600px;
+}
+
+.delta_work_page p {
+    width: 400px;
+} */
 
 h1 {
     font-family: 'IBM Plex Mono', monospace;
@@ -258,7 +268,8 @@ h1 {
 h2 {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 24px;
-    color: #B98DDD;
+    color: #9F55C1;
+
     /* padding-top: 16px; */
 }
 
@@ -266,6 +277,7 @@ h3 {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     margin-bottom: 0;
+    padding-top: 6px;
 }
 
 ul {
@@ -275,14 +287,15 @@ ul {
 li {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
-    color: #555555;
+    color: gray;
     line-height: 24px;
+    padding-bottom: 6px;
 }
 
 p {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
-    color: #555555;
+    color: gray;
     margin-top: 8px;
     line-height: 24px;
 }
@@ -303,6 +316,7 @@ body {
     left: 20px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
+    color: gray;
 }
 
 #longpic {
