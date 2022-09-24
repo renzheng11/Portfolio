@@ -4,46 +4,42 @@
     box-sizing: border-box;
 }
 /* -------------------------- HOME -------------------------- */
-.logo {
+.menu {
+    float: left;
+}
+
+#logo {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 20px;
     text-decoration: none;
     display: block;
+    color: #B670ED;
+    padding-left: 8px;
+    padding-top: 10px;
 }
 
-.logo a:link, a:hover, a:visited, a:active, a:focus {
-  color: black;
-  text-decoration: none;
+#logo a:link, a:hover, a:visited, a:active, a:focus {
+    color: #B98DDD;
+    text-decoration: none;
 }
 
-.menu {
+.vertical-menu {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     text-decoration: none;
-    float: left;
+    padding-left: 8px;
+    line-height: 26px;
   }
   
-  .menu a {
-    color: black;
+  .vertical-menu a {
     display: block; 
     text-decoration: none;
-    padding: 4px;
   }
 
   .vertical-menu a:hover {
     color: #B98DDD;
   }
-
-  .menu a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
-  /* .menu a:focus {
-    text-decoration: line-through;
-  } */
-
 
 #back_button {
     font-family: 'IBM Plex Mono', monospace;
@@ -53,22 +49,24 @@
     display: block;
 }
 
-#next_button {
+.next_button {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
-    color: rgb(120, 120, 120);
+    color: #B98DDD;
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+
+/* 
 .navbar {
     display: inline;
     vertical-align: top;
     text-decoration: none;
-}
+} */
 
-.work_nav {
+.projects {
     /* float: right; */
     text-decoration: none;
     display: block;
@@ -79,29 +77,32 @@
     /* line-height: 400%; */
 }
 
-.work_nav_box {
+.projects_box {
     display: block;
 }
 
-.work_nav img {
+.projects img {
     width: 200px;
     /* text-decoration: none; */
     float: right;
     /* float: right; */
     padding-top: 8px;
+    /* border: black 3px; */
 
 }
 
-.work_nav_text {
+.projects_text {
     display: block;
     float: left;
     padding-top: 60px;
     padding-bottom: 20px;
 }
 
-.work_nav_text p {
+.projects_text p {
     padding-bottom: 12px;
 }
+
+
 
 .work_title {
     font-family: 'IBM Plex Mono', monospace;
@@ -114,56 +115,70 @@
     text-decoration: none;
   }
 
-.page_pic {
-    /* width: 600px; */
-}
-
-
-
-
-
-  /* Ellipse 1 */
-  /* body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
-
-
-
-/* .elipse1 {
-    position: relative;
-    left: 391px;
-    bottom: -336px;
-    width: 783px;
-    height: 704px;
+.circle {
+    position: absolute;
+    left: 600px;
+    bottom: -2px;
+    width: 600px;
+    height: 800px;
 
     background: #B776EA;
     filter: blur(400px);
     overflow: hidden;
-    margin:0 auto;
+    margin:0;
 
     z-index:-1;
-} */
-
-.hor_line {
-    width:660px; height:2px; background: #000; float: left;
 }
 
+.hor_line {
+    width:660px; height:1.2px; background: #000; float: left;
+}
 
+/* -------------------------- ARCHIVE -------------------------- */
+
+.archive_grid {
+    padding-left: 400px;
+    padding-top: 20px;
+    display: grid;
+    max-width: 960px;
+    /* margin: 100px auto; */
+    grid-template-columns: 300px 400px;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.archive_box {
+    /* border: skyblue 1px solid; */
+}
+
+.archive_box h2 {
+    font-size: 16px;
+    padding: none;
+}
+
+.archive_box p {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.archive_box img {
+    width: 400px;
+}
+
+#dismantle2 {
+    width: 300px;
+    padding-left: 88px;
+    padding-top: 20px;
+}
+
+.archive_back {
+    padding-top: 100px;
+    padding-left: 400px;
+}
+
+#archive_next {
+    padding-left: 400px;
+}
 
 /* -------------------------- ABOUT -------------------------- */
 
@@ -202,14 +217,13 @@
     background: #000;
 }
 
-
 /* -------------------------- WORK PAGES -------------------------- */
 
 .work_page {
     width: 1000px;
     display: block;
     padding-left: 400px;
-    padding-top: 20px;
+    padding-top: 68px;
 }
 
 .work_page p {
@@ -225,7 +239,6 @@
     padding-top: 6px;
     padding-bottom: 6px;
 }
-
 
 .work_page img {
     width: 400px;
@@ -246,7 +259,7 @@ h2 {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 24px;
     color: #B98DDD;
-    padding-top: 16px;
+    /* padding-top: 16px; */
 }
 
 h3 {
@@ -284,3 +297,18 @@ body {
     margin: auto;
 }
 
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+
+#longpic {
+    padding-bottom: 0px;
+}
+
+#longpic2 {
+    padding-top: 0px;
+}
