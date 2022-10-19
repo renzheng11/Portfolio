@@ -5,6 +5,7 @@
 }
 /* -------------------------- HOME -------------------------- */
 .menu {
+    position: fixed;
     float: left;
 }
 
@@ -186,7 +187,7 @@
 .about {
     display: block;
     padding-left: 400px;
-    padding-top: 100px;
+    padding-top: 30px;
     line-height: 400%;
 }
 .about a {
@@ -311,12 +312,14 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     color: gray;
+    /* display: table-cell;
+    vertical-align: bottom; */
 }
 
 #longpic {
@@ -325,4 +328,8 @@ body {
 
 #longpic2 {
     padding-top: 0px;
+}
+
+#data_img {
+    width: 600px;
 }
