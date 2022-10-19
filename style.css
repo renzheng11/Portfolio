@@ -149,18 +149,14 @@
     row-gap: 40px;
 }
 
-.archive_box {
-    /* border: skyblue 1px solid; */
-}
-
 .archive_box h2 {
-    font-size: 16px;
+    font-size: 18px;
     padding: none;
 }
 
 .archive_box p {
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .archive_box img {
@@ -245,8 +241,8 @@
 
 .work_page img {
     width: 600px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .work_page ul {
@@ -275,7 +271,8 @@ h2 {
 }
 
 h3 {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
     font-size: 16px;
     margin-bottom: 0;
     padding-top: 6px;
@@ -286,7 +283,7 @@ ul {
 }
 
 li {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Montserrat', serif;
     font-size: 16px;
     color: gray;
     line-height: 24px;
@@ -294,11 +291,11 @@ li {
 }
 
 p {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Montserrat', serif;
     font-size: 16px;
     color: gray;
     margin-top: 8px;
-    line-height: 24px;
+    line-height: 26px;
 }
 
 body {
