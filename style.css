@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* -------------------------- HOME -------------------------- */
 .menu {
     position: fixed;
@@ -15,7 +22,7 @@
     padding-bottom: 20px;
     text-decoration: none;
     display: block;
-    color: #9F55C1;
+    color: #9F55C1 !important;
     padding-left: 8px;
     padding-top: 10px;
 }
@@ -43,7 +50,8 @@
   }
 
 #back_button {
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Montserrat', monospace;
     font-size: 16px;
     color: rgb(120, 120, 120);
     padding-bottom: 20px;
@@ -51,45 +59,37 @@
 }
 
 .next_button {
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Montserrat', monospace;
     font-size: 16px;
-    color: #9F55C1;
+    font-weight: 500;
+    color: #9F55C1 !important;
+    text-decoration: none;
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-
-/* 
-.navbar {
-    display: inline;
-    vertical-align: top;
-    text-decoration: none;
-} */
-
 .projects {
-    /* float: right; */
     text-decoration: none;
     display: block;
-    /* padding-top: 8px; */
     padding-left: 600px;
-    /* position: relative; */
-    /* top: 140px; left: 400px; */
-    /* line-height: 400%; */
 }
 
 .projects_box {
     display: block;
+    /* margin-top: 20px; */
 }
 
 .projects img {
-    width: 200px;
-    /* text-decoration: none; */
+    width: 200px; height: 134px; object-fit: cover;
     float: right;
-    /* float: right; */
     padding-top: 8px;
-    /* border: black 3px; */
+    bottom: 0;
+}
 
+.projects {
+    margin-top: 20px;
 }
 
 .projects_text {
@@ -99,17 +99,36 @@
     padding-bottom: 20px;
 }
 
+.projects_title {
+    font-family: 'IBM Plex Mono', monospace;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
 .projects_text p {
     padding-bottom: 12px;
     color: gray;
 }
 
+.projects_type {
+    /* font-family: 'Esteban', serif; */
+    font-family: 'Montserrat', monospace;
+    font-size: 16px;
+    color: gray;
+    /* margin-bottom: 8px; */
+    line-height: 26px;
+}
+
 
 
 .work_title {
-    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Montserrat', monospace;
+    font-weight: 500;
     font-size: 30px;
     text-decoration: none;
+    color: black;
 }
 
 .work_title a:link, a:hover, a:visited, a:active, a:focus {
@@ -134,6 +153,7 @@
 
 .hor_line {
     width:660px; height:1.2px; background: #000; float: left;
+    margin-bottom: 12px;
 }
 
 /* -------------------------- ARCHIVE -------------------------- */
@@ -152,11 +172,15 @@
 .archive_box h2 {
     font-size: 18px;
     padding: none;
+    font-family: 'Montserrat', monospace;
+    padding-bottom: 12px;
 }
 
 .archive_box p {
-    font-size: 14px;
+    width: 280px;
+    font-size: 12px;
     line-height: 20px;
+    font-family: 'Montserrat', monospace;
 }
 
 .archive_box img {
@@ -185,13 +209,14 @@
     padding-left: 400px;
     padding-top: 30px;
     line-height: 400%;
+    color: black;
 }
 .about a {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Montserrat', monospace;
     font-size: 20px;
     padding-left: 26px;
     text-decoration: none;
-    color: black;
+    color: #444444;
 }
 
 .about p {
@@ -217,85 +242,102 @@
 
 /* -------------------------- WORK PAGES -------------------------- */
 
-.work_page {
+.page {
     width: 1000px;
     display: block;
-    padding-left: 400px;
+    padding-left: 360px;
     padding-top: 68px;
 }
 
-.work_page p {
-    padding-bottom: 10px;
-    width: 600px;
-}
-
-.work_page h2 {
-    padding-top: 20px;
-    padding-bottom: 8px;
-}
-
-.work_page h3 {
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.work_page img {
-    width: 600px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.work_page ul {
-    padding-left: 20px;
-}
-
-/* .delta_work_page img {
-    width: 600px;
-}
-
-.delta_work_page p {
-    width: 400px;
-} */
-
-h1 {
+.page h1 {
     font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Montserrat', monospace; */
     font-size: 30px;
 }
 
-h2 {
-    font-family: 'IBM Plex Mono', monospace;
+.page p {
+    padding-bottom: 10px;
+    width: 600px;
+
+    font-family: 'Montserrat', monospace;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    /* font-family: 'PT Serif', serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-weight: 300;
+    font-size: 14px;
+    color: gray;
+    margin-top: 8px;
+    line-height: 26px;
+    
+}
+
+.page li {
+    padding-bottom: 10px;
+    width: 600px;
+
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Montserrat', monospace;
+    font-weight: 300;
+    font-size: 14px;
+    color: gray;
+    margin-top: 8px;
+    line-height: 16px;
+}
+
+
+
+.page h2 {
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Montserrat', serif;
     font-size: 24px;
-    color: #9F55C1;
+    /* color: #9F55C1; */
+    color: black;
+    font-weight: 500;
 
     /* padding-top: 16px; */
 }
 
-h3 {
+.page h3 {
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+
     font-family: 'Montserrat', serif;
+    /* font-family: 'IBM Plex Mono', monospace; */
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 0;
     padding-top: 6px;
 }
 
+.page img {
+    width: 600px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.friend_pic {
+    width: 260px !important;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.noise_pic {
+    width: 260px !important;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.page ul {
+    padding-left: 20px;
+}
+
 ul {
     margin-top: 8px;
-}
-
-li {
-    font-family: 'Montserrat', serif;
-    font-size: 16px;
-    color: gray;
-    line-height: 24px;
-    padding-bottom: 6px;
-}
-
-p {
-    font-family: 'Montserrat', serif;
-    font-size: 16px;
-    color: gray;
-    margin-top: 8px;
-    line-height: 26px;
 }
 
 body {
@@ -329,4 +371,8 @@ body {
 
 #data_img {
     width: 600px;
+}
+
+#waveform {
+    margin: 0; padding: 0; outline: none;
 }
