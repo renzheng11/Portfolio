@@ -54,7 +54,6 @@
 }
 
 #back_button {
-    /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Montserrat', monospace;
     font-size: 16px;
     color: rgb(120, 120, 120);
@@ -63,7 +62,6 @@
 }
 
 .next_button {
-    /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Montserrat', monospace;
     font-size: 16px;
     font-weight: 500;
@@ -247,7 +245,7 @@
 
 .about {
     display: block;
-    padding-left: 400px;
+    padding-left: 360px;
     padding-top: 30px;
     line-height: 400%;
     color: black;
@@ -306,7 +304,7 @@
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: 300;
     font-size: 14px;
-    color: gray;
+    color: #545454;
     margin-top: 8px;
     line-height: 26px;
     
@@ -315,12 +313,10 @@
 .page li {
     padding-bottom: 10px;
     width: 600px;
-
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-family: 'Montserrat', monospace;
     font-weight: 300;
     font-size: 14px;
-    color: gray;
+    color: #545454;
     margin-top: 8px;
     line-height: 16px;
 }
@@ -331,15 +327,10 @@
     width: 600px;
     padding-top: 20px;
     padding-bottom: 8px;
-
-    /* font-family: 'IBM Plex Mono', monospace; */
     font-family: 'Montserrat', serif;
     font-size: 24px;
-    /* color: #9F55C1; */
     color: black;
     font-weight: 500;
-
-    /* padding-top: 16px; */
 }
 
 .page h3 {
@@ -348,7 +339,6 @@
     padding-bottom: 6px;
 
     font-family: 'Montserrat', serif;
-    /* font-family: 'IBM Plex Mono', monospace; */
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 0;
@@ -357,8 +347,8 @@
 
 .page img {
     width: 600px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .friend_pic {
@@ -370,7 +360,31 @@
 .noise_pic {
     width: 260px !important;
     margin: 0 !important;
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
+}
+
+#noise_pics {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.noise_caption {
+    padding-bottom: 0 !important;
+}
+
+.sources {
+    font-size: 10px !important;
+    line-height: 20px !important;
+}
+
+.spacing1 {
+    height: 20px;
+}
+
+#hello {
+    padding-top: 120px;
+    font-size: 16px;
 }
 
 .page ul {
@@ -386,7 +400,6 @@ body {
 }
 
 .oscar {
-    /* width: 600px; */
     padding: 60px;
     margin: auto;
 }
@@ -398,8 +411,6 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     color: gray;
-    /* display: table-cell;
-    vertical-align: bottom; */
 }
 
 #longpic {
