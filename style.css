@@ -369,8 +369,18 @@
     padding-bottom: 12px;
 }
 
-.noise_caption {
+.with_caption {
+    color:rgb(120, 120, 120);
     padding-bottom: 0 !important;
+}
+
+.caption {
+    color:#A0A0A0 !important;
+    padding-bottom: 16 !important;
+}
+
+.smaller_pic {
+    width: 360px !important;
 }
 
 .sources {
