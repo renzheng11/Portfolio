@@ -4,10 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/* html {
-    cursor: none;
-  } */
-
 *,
 *::before,
 *::after { 
@@ -31,9 +27,8 @@
     transition: transform .2s;
   }
 
-/* -------------------------- HOME -------------------------- */
+/* -------------------------- [HOME] -------------------------- */
 .menu {
-    /* position: fixed; */
     float: left;
     color: black !important;
 }
@@ -71,25 +66,16 @@
     color: #9024F9;
 }
 
-#back_button {
-    font-family: 'Montserrat', monospace;
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
-    color: #9872BD;
-    padding-bottom: 20px;
-    display: block;
+    color: gray;
 }
 
-.next_button {
-    font-family: 'Montserrat', monospace;
-    font-size: 16px;
-    font-weight: 500;
-    color: #9872BD !important;
-    text-decoration: none;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
+/* -------------------------- [PROJECTS] -------------------------- */
 .projects {
     display: flex;
     flex-direction: column;
@@ -286,14 +272,6 @@
     order: 1;
 }
 
-.work_title {
-    font-family: 'Montserrat', monospace;
-    font-weight: 500;
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-}
-
 .circle {
     position: fixed;
     right: -142px;
@@ -396,7 +374,26 @@
     border: .95px solid black;
 }
 
-/* -------------------------- WORK PAGES -------------------------- */
+/* -------------------------- [WORK] -------------------------- */
+
+#back_button {
+    font-family: 'Montserrat', monospace;
+    font-size: 16px;
+    color: #9872BD;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.next_button {
+    font-family: 'Montserrat', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9872BD !important;
+    text-decoration: none;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .page {
     width: 1000px;
@@ -430,7 +427,6 @@
     font-weight: 300;
     font-size: 14px;
     color: #545454;
-    /* margin-top: 8px; */
     line-height: 24px;
 }
 
@@ -439,7 +435,7 @@
     padding-top: 20px;
     padding-bottom: 8px;
     font-family: 'Montserrat', serif;
-    font-size: 24px;
+    font-size: 22px;
     color: black;
     font-weight: 500;
 }
@@ -462,7 +458,7 @@
     padding-bottom: 20px;
 }
 
-.friend_pic {
+.portrait_pic {
     width: 260px !important;
     object-fit: cover;
     margin-right: 30px;
@@ -525,15 +521,6 @@ body {
     margin: auto;
 }
 
-.footer {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-    color: gray;
-}
-
 #longpic {
     padding-bottom: 0px;
 }
@@ -548,4 +535,26 @@ body {
 
 #waveform {
     margin: 0; padding: 0; outline: none;
+}
+
+.nobullet {
+    list-style-type: none;
+}
+
+.spin {
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
