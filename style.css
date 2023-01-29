@@ -486,6 +486,11 @@
     padding-bottom: 16 !important;
 }
 
+.credit {
+    color:#A0A0A0 !important;
+    padding-top: 0 !important; 
+}
+
 .smaller_pic {
     width: 360px !important;
 }
