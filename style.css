@@ -27,11 +27,11 @@
     overflow: hidden;
     margin: 0;
 
-    /* z-index:-1; */
+    z-index:-1;
 
-    /* -moz-filter: opacity(0); */
-    /* -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
+    -moz-filter: opacity(0);
+    /* -webkit-backface-visibility: hidden; */
+    /* -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0); */
 }
