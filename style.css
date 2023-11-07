@@ -28,6 +28,7 @@
         rgba(158, 28, 227, 0.1),
         rgba(158, 28, 227, 0.02),
         transparent);
+    z-index: -1;
 }
 
 #logo {
@@ -41,11 +42,12 @@
     display: block;
     padding-left: 16px;
     padding-top: 10px;
-    color: #9a61e9;
+    /* color: #9a61e9; */
+    color: black;
 }
 
 .vertical-menu a:hover {
-    color: #9b4cea;
+    color: #7532CA;
 }
 
 #logo a:link, a:hover, a:visited, a:active, a:focus {
@@ -72,8 +74,6 @@
     display: block; 
     text-decoration: none;
 }
-
-
 
 .footer {
     position: fixed;
@@ -259,7 +259,7 @@
 }
 
 .project_title:hover {
-    color: #8b43d4;
+    color: #7532CA;
 }
 
 .project_text p {
@@ -270,7 +270,7 @@
 .project_type {
     font-family: 'Montserrat', monospace;
     font-size: 14px;
-    color: #745690 !important;
+    color: #574072 !important;
     line-height: 22px;
 }
 
@@ -344,7 +344,7 @@
     font-size: 20px;
     padding-left: 26px;
     text-decoration: none;
-    color: #444444;
+    color: #303030;
 }
 
 .about p {
