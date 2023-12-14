@@ -141,7 +141,7 @@ nav a {
 }
 
 .project_num {
-    margin-right: 140px;
+    margin-right: 100px;
 }
 
 .project_title:hover {
@@ -200,8 +200,8 @@ nav a {
     position: absolute;
     display: block;
 
-    /* padding-left: 300px; */
-    margin-left: 360px;
+    padding-left: 300px;
+    /* margin-left: 300px; */
     padding-top: 68px; 
     /* margin-left: auto;
     margin-right: auto; */
@@ -312,11 +312,6 @@ nav a {
     height: 20px;
 }
 
-#hello {
-    padding-top: 120px;
-    font-size: 16px;
-}
-
 .page ul {
     padding-left: 20px;
 }
@@ -386,21 +381,32 @@ body {
 
 .about {
     /* display: block; */
-    /* padding-left: 360px; */
+    padding-left: 154px;
+    padding-top: 142px;
+    width: 1000px;
     color: #EDEDED;
+
+}
+
+#description {
+    padding-bottom: 30px;
+}
+
+#contact {
+    font-size: 20px;
 }
 
 .about a {
     font-family: 'Inter', monospace;
-    font-size: 20px;
-    padding-left: 26px;
+    /* font-size: 16px; */
+    /* padding-left: 26px; */
     text-decoration: none;
     color: #EDEDED;
 }
 
 .about p {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 26px;
+    /* font-size: 16px; */
     display: block;
     color: EDEDED;
 }
@@ -438,11 +444,11 @@ body {
         margin-left: 280px;
     }
     .project_type {
-            margin-left: auto;
-            margin-right: 500px;
-            font-size: 14px;
+        margin-left: auto;
+        margin-right: 500px;
+        font-size: 14px;
     }
     .page {
-        margin-left: 700px;
+        padding-left: 700px;
     }
 }
