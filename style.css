@@ -200,7 +200,8 @@ nav a {
     position: absolute;
     display: block;
 
-    padding-left: 380px;
+    /* padding-left: 300px; */
+    margin-left: 360px;
     padding-top: 68px; 
     /* margin-left: auto;
     margin-right: auto; */
@@ -385,12 +386,12 @@ body {
 
 .about {
     /* display: block; */
-    padding-left: 360px;
+    /* padding-left: 360px; */
     color: #EDEDED;
 }
 
 .about a {
-    font-family: 'Montserrat', monospace;
+    font-family: 'Inter', monospace;
     font-size: 20px;
     padding-left: 26px;
     text-decoration: none;
@@ -407,4 +408,41 @@ body {
 .about hr {
     width: 660px;
     border: .95px solid EDEDED;
+}
+
+@media (min-width: 300px) {
+
+}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1500px) {
+    .project_num {
+        margin-left: 280px;
+    }
+    .project_type {
+            margin-left: auto;
+            margin-right: 500px;
+            font-size: 14px;
+    }
+    .page {
+        margin-left: 700px;
+    }
 }
