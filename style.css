@@ -1,459 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 body {
-    background-color: #040404;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+
+  position: relative;
+  overflow-x: hidden;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    /* background-color: #333; */
-    color: #fff;
-    /* font-color: #fff; */
-    font-family: "IBM Plex Mono";
-    text-decoration: none;
+h1 {
+  margin-bottom: 0;
 }
 
-nav a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 10px 20px; */
-    /* background-color: #333; */
-    color: #fff;
-    /* font-color: #fff; */
-    font-family: "IBM Plex Mono";
-    text-decoration: none;
+h2 {
+  margin-bottom: 0;
+}
+h3 {
+  margin-bottom: 0;
 }
 
-
-#logo {
-    font-size: 1.5rem;
-    font-weight: semi-bold;
-    color: #fff;
-    text-decoration: none;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: 400;
+  margin-top: 40px;
 }
 
 .menu {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  font-size: 1rem;
+  width: 254px;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-
-.menu-item {
-    cursor: poIBM Plex Mono;
+footer {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #5e5e5eff;
 }
 
-.home-heading {
-    color: #fff;
-    font-family: IBM Plex Mono;
-    font-size: 30px;
-    margin-left: 20px;
+/* #heart {
+  position: absolute;
+  transform: translateY(-2px);
+} */
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.brand {
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .landing {
-    color: #fff;
-    font-family: IBM Plex Mono;
-    font-size: 36px;
-    margin-left: 20px;
-    margin-top: 200px;
-    align-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.typewrite {
-    color: #F3BE57;
+.headline-name {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 0.6s ease;
 }
 
-.canvas-body {
-    text-align: center;
-    /* text-align works, but there might be a more proper way to align to the center */
-
-    margin-left: -12px;
-    margin-right: 0px;
-    margin-top: 80px;
-    padding: 0px;
-
-    position: absolute;
-    /* top: 400;
-    left: 0; */
-    width: 100% !important;
-    height: 100%;
-
-    display: block;
-
-    z-index: -2;
+.headline-name.show {
+  transform: translateY(-40px);
+  opacity: 1;
 }
 
-/* div.logParent {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: black;
-    z-index: 2;
-} */
-
-
-
-
-
-.projects {
-    color: #fff;
-    font-family: IBM Plex Mono;
-    margin-top: 503px;
-    margin-bottom: 100px;
-    display: block;
+.headline-text {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 1s ease;
 }
 
-.projects a {
-    color: #fff;
-    font-family: IBM Plex Mono;
-    text-decoration: none;
+.headline-text.show {
+  transform: translateY(-40px);
+  opacity: 1;
 }
 
-.project_text {
-    display: flex;
-    /* display: inline; */
-    /* justify-content: space-between; */
-    margin-left: 216px;
-    margin-right: 80px;
-    /* vertical-align: middle; */
-    align-items: center;
+.headline-name {
+  font-size: 2.8rem;
+  width: 48%;
 }
 
-.project_title {
-    font-size: 26px;
-
+.headline-text {
+  font-size: 1.5rem;
+  max-width: 400px;
+  color: #5e5e5eff;
 }
 
-.project_type {
-    margin-left: auto;
-    margin-right: 100px;
-    font-size: 14px;
+#project-showcase {
+  margin-top: 100px;
+  /* padding-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.project_num {
-    margin-right: 100px;
+.project {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.56s ease-out;
 }
 
-.project_title:hover {
-    background: #F3BE57;
-    color: black;
-    /* z-index: 2; */
+.project.show {
+  transform: translateY(-20px);
+  opacity: 1;
 }
 
-/* .project_text:hover .project_img {
-    display: block;
-} */
-
-.project_img {
-    display: none;
-    position: absolute;
-    /* : none; */
-    width: 200px;
-    margin-top: 0;
+.arrow {
+  opacity: 0;
+  transition: 0.4s;
+  display: inline-block;
 }
 
-.project_img img {
-    width: 200px;
-    height: auto;
-    position: absolute;
-    /* z-index: -1; */
+.project:hover .arrow {
+  opacity: 1;
+  transform: translateX(6px);
 }
 
-#follow {
-    width: 200px;
-    height: 100px;
-    /* top: px; */
+.project-title {
+  font-size: 2rem;
+  transform: translateX(-1px);
+  margin-bottom: 0.4rem;
 }
 
-#back_button {
-    font-family: 'Inter', monospace;
-    font-size: 18px;
-    color: #F3BE57;
-    padding-bottom: 20px;
-    display: block;
+.project {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400px;
 }
 
-.next_button {
-    font-family: 'Inter', monospace;
-    font-size: 18px;
-    /* font-weight: 500; */
-    color: #F3BE57 !important;
-    /* text-decoration: none; */
-    display: block;
-    padding-top: 40px;
-    padding-bottom: 70px;
-    text-transform: lowercase;
+.project-description {
+  font-size: 2rem;
+  max-width: 500px;
+  color: gray;
+}
+
+.project-img img {
+  width: 500px;
+  height: 360px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project:hover img {
+  /* filter: brightness(50%); */
+}
+
+.blobs {
+  position: relative;
+  width: 100vw;
+}
+
+.blob {
+  /* border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%; */
+  border-top-left-radius: 70% 64%;
+  border-top-right-radius: 70% 64%;
+  border-bottom-right-radius: 70% 64%;
+  border-bottom-left-radius: 70% 64%;
+
+  width: 100vw;
+  height: 180vh;
+  /* left: 0vw; */
+
+  opacity: 0.8;
+  filter: blur(50px);
+
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+}
+
+.blob-1 {
+  top: -100vh;
+  left: -54vw;
+  background: radial-gradient(#f785ff 10%, rgba(255, 255, 255, 0) 80%);
+  /* overflow: hidden; */
+}
+
+.blob-2 {
+  top: -100vh;
+  left: 0vw;
+  background: radial-gradient(#99a7ff 10%, rgba(255, 255, 255, 0) 80%);
+}
+
+.blob-3 {
+  top: -100vh;
+  left: 60vw;
+  background: radial-gradient(#6bdcff 10%, rgba(255, 255, 255, 0) 80%);
 }
 
 .page {
-    width: 700px;
-    position: absolute;
-    display: block;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    /* margin-left: 300px; */
-    /* border:3px solid yellow; */
-
-
-    /* padding-left: 300px; */
-    /* margin-left: 300px; */
-    padding-top: 68px; 
-    /* margin-left: auto;
-    margin-right: auto; */
-}
-
-.page h1 {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 30px;
-    width: 700px;
-    margin-top: 42px;
-    color: #EDEDED;
-}
-
-.page p {
-    padding-bottom: 10px;
-    width: 700px;
-
-    font-family: 'Inter', monospace;
-    font-weight: 300;
-    font-size: 16px;
-    color: #EDEDED;
-    margin-top: 8px;
-    line-height: 26px;
-}
-
-.page li {
-    padding-bottom: 10px;
-    width: 600px;
-    font-family: 'Inter', monospace;
-    font-weight: 300;
-    font-size: 16px;
-    color: #EDEDED;
-    line-height: 24px;
-}
-
-.page h2 {
-    width: 700px;
-    padding-top: 20px;
-    padding-bottom: 8px;
-    font-family: 'Inter', serif;
-    font-size: 22px;
-    color: #EDEDED;
-    font-weight: 500;
-}
-
-.page h3 {
-    margin-top: 8px;
-    padding-top: 8px;
-    padding-bottom: 6px;
-
-    font-family: 'Inter', serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 0;
-    padding-top: 6px;
-    color: #EDEDED;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  /* row-gap: 1rem; */
 }
 
 .page img {
-    width: 700px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  width: 600px;
+  /* margin-top: 2rem; */
+  /* margin-bottom: 2rem; */
 }
 
-.portrait_pic {
-    width: 260px !important;
-    object-fit: cover;
-    margin-right: 30px;
-}
-
-.noise_pic {
-    width: 260px !important;
-    margin: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-#noise_pics {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.with_caption {
-    color: #EDEDED;
-    padding-bottom: 0 !important;
+.pic-adj {
+  margin-top: 1.2rem;
 }
 
 .caption {
-    color: #A0A0A0 !important;
-    padding-bottom: 16 !important;
+  margin-top: 0.2rem;
+  color: #6c6c6c;
 }
 
-.credit {
-    color: #A0A0A0 !important;
-    padding-top: 0 !important;
+.page p,
+.page li {
+  line-height: 1.6rem;
 }
 
-.smaller_pic {
-    width: 360px !important;
+.page-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.sources {
-    font-size: 14px !important;
-    line-height: 20px !important;
+.back-btn {
+  font-family: "Inter", monospace;
+  text-decoration: none;
+  font-size: 26px;
+  color: black;
+  margin-top: 6rem;
+  display: block;
 }
 
-.spacing1 {
-    height: 20px;
-}
-
-.page ul {
-    padding-left: 20px;
-}
-
-ul {
-    margin-top: 8px;
-}
-
-body {
-    /* padding: 20px; */
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.oscar {
-    padding: 60px;
-    margin: auto;
-}
-
-#longpic {
-    padding-bottom: 0px;
-}
-
-#longpic2 {
-    padding-top: 0px;
-}
-
-#data_img {
-    width: 600px;
-}
-
-#waveform {
-    margin: 0;
-    padding: 0;
-    outline: none;
-}
-
-.nobullet {
-    list-style-type: none;
-}
-
-#spin {
-    -webkit-animation: spin 30s linear infinite;
-    -moz-animation: spin 30s linear infinite;
-    animation: spin 30s linear infinite;
-}
-
-@-moz-keyframes spin {
-    100% {
-        -moz-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+.next-btn {
+  font-family: "Inter", monospace;
+  font-size: 18px;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: block;
 }
 
 .about {
-    /* display: block; */
-    padding-left: 154px;
-    padding-top: 142px;
-    width: 1000px;
-    color: #EDEDED;
-
-}
-
-#description {
-    padding-bottom: 30px;
+  font-family: "IBM Plex Mono", monospace;
+  position: absolute;
+  top: 16rem;
+  padding-left: 20rem;
+  width: 1000px;
+  color: black;
 }
 
 #contact {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+#under {
+  margin-bottom: 40px;
+}
+
+.pen {
+  font-size: 1.6rem;
 }
 
 .about a {
-    font-family: 'Inter', monospace;
-    /* font-size: 16px; */
-    /* padding-left: 26px; */
-    text-decoration: none;
-    color: #EDEDED;
+  /* font-family: "Inter", monospace; */
+  text-decoration: none;
+  color: black;
 }
 
 .about p {
-    font-family: 'IBM Plex Mono', monospace;
-    /* font-size: 16px; */
-    display: block;
-    color: EDEDED;
+  color: black;
 }
 
-.about hr {
-    width: 660px;
-    border: .95px solid EDEDED;
+@media (min-width: 1800px) {
+  body {
+    margin-left: 16%;
+    margin-right: 16%;
+  }
 }
 
-@media (min-width: 300px) {
-
+@media (max-width: 1400px) {
+  body {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
-@media (min-width: 480px) {
-
+@media (max-width: 1200px) {
+  .project-description {
+    /* width: 100%; */
+    max-width: 100%;
+    font-size: 1.4rem;
+  }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 900px) {
+  .landing {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 160px;
+  }
 
+  .headline-name {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .headline-text {
+    font-size: 1.28rem;
+  }
+
+  .project {
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 1rem;
+    /* background-color: red; */
+    /* position: relative */
+    /* max-width: 500px; */
+  }
+
+  .project-description {
+    /* width: 100%; */
+    max-width: 100%;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 500px;
+  }
 }
 
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1500px) {
-    .project_num {
-        margin-left: 280px;
-    }
-    .project_type {
-        margin-left: auto;
-        margin-right: 500px;
-        font-size: 14px;
-    }
-    /* .page {
-        padding-left: 700px;
-    } */
+@media (max-width: 500px) {
+  .headline-name {
+    width: 100%;
+  }
 }
