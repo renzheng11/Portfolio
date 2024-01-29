@@ -17,14 +17,18 @@ export function QM() {
 						build them include Figma, p5.JS, D3.js, and GSAP.
 					</p>
 					<div>
-						<img src="Assets/qm/qm_gif_width.gif" alt="" class="page_pic" />
 						<img
-							src="Assets/qm/qm_gif_arrows.gif"
+							src={require("../Assets/qm/qm_gif_width.gif")}
+							alt=""
+							class="page_pic"
+						/>
+						<img
+							src={require("../Assets/qm/qm_gif_arrows.gif")}
 							alt=""
 							class="page_pic pic-adj"
 						/>
 						<img
-							src="Assets/qm/qm_gif_cap.gif"
+							src={require("../Assets/qm/qm_gif_cap.gif")}
 							alt=""
 							class="page_pic pic-adj"
 						/>

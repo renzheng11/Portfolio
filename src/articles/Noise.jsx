@@ -11,7 +11,10 @@ export function Noise() {
 					<h1>Noise In Scope</h1>
 					<p>Visualizing Noise(scapes) in Atlanta</p>
 
-					<img src="Assets/noise/noise_gif.gif" alt="Spectogram" />
+					<img
+						src={require("../Assets/noise/noise_gif.gif")}
+						alt="Spectogram"
+					/>
 
 					<section>
 						<h2>Topic of Inquiry</h2>
@@ -89,7 +92,7 @@ export function Noise() {
 						</p>
 
 						<img
-							src="Assets/noise/noise_4.png"
+							src={require("../Assets/noise/noise_4.png")}
 							alt="Images from various places in Atlanta"
 							class="page_pic"
 						/>
@@ -101,7 +104,7 @@ export function Noise() {
 							Midtown:
 						</p>
 						<img
-							src="Assets/noise/noise_waveform.png"
+							src={require("../Assets/noise/noise_waveform.png")}
 							alt="Waveform"
 							id="waveform"
 						/>
@@ -122,7 +125,7 @@ export function Noise() {
 
 						<img
 							class="with_caption page_pic"
-							src="Assets/noise/noise_spectro1.png"
+							src={require("../Assets/noise/noise_spectro1.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">
@@ -131,7 +134,7 @@ export function Noise() {
 						</p>
 						<img
 							class="with_caption page_pic"
-							src="Assets/noise/noise_spectro2.png"
+							src={require("../Assets/noise/noise_spectro2.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">
@@ -162,7 +165,7 @@ export function Noise() {
 						</p>
 
 						<img
-							src="Assets/noise/noise_draft.png"
+							src={require("../Assets/noise/noise_draft.png")}
 							alt="Spectogram"
 							class="page_pic"
 						/>
@@ -207,7 +210,10 @@ export function Noise() {
 							dodecahedron.
 						</p>
 
-						<img src="Assets/noise/noise_building.png" alt="Spectogram" />
+						<img
+							src={require("../Assets/noise/noise_building.png")}
+							alt="Spectogram"
+						/>
 
 						<h3>Part 2: Visualizing</h3>
 						<p>
@@ -228,42 +234,42 @@ export function Noise() {
 
 						<img
 							class="with_caption"
-							src="Assets/noise/noise_vis_1.png"
+							src={require("../Assets/noise/noise_vis_1.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">Beltline Construction Site</p>
 
 						<img
 							class="with_caption"
-							src="Assets/noise/noise_vis_7.png"
+							src={require("../Assets/noise/noise_vis_7.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">Virginia Highlands Surburbs</p>
 
 						<img
 							class="with_caption"
-							src="Assets/noise/noise_vis_2.png"
+							src={require("../Assets/noise/noise_vis_2.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">Cabbagetown Coffee shop</p>
 
 						<img
 							class="with_caption"
-							src="Assets/noise/noise_vis_3.png"
+							src={require("../Assets/noise/noise_vis_3.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">Freedom Park Trail</p>
 
 						<img
 							class="with_caption"
-							src="Assets/noise/noise_vis_4.png"
+							src={require("../Assets/noise/noise_vis_4.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">Sirens in Midtown</p>
 
 						<img
 							class="with_caption"
-							src="Assets/noise/noise_vis_5.png"
+							src={require("../Assets/noise/noise_vis_5.png")}
 							alt="Spectogram"
 						/>
 						<p class="caption">Piedmont Park fields</p>
@@ -272,7 +278,7 @@ export function Noise() {
 					<section>
 						<h2>Final Product</h2>
 						<img
-							src="Assets/noise/noise_apps.png"
+							src={require("../Assets/noise/noise_apps.png")}
 							alt="Spectogram"
 							class="pic-adj"
 						/>
@@ -285,7 +291,10 @@ export function Noise() {
 							have choices in the duration of soundscapes.
 						</p>
 
-						<img src="Assets/noise/noise_maps.png" alt="Spectogram" />
+						<img
+							src={require("../Assets/noise/noise_maps.png")}
+							alt="Spectogram"
+						/>
 
 						<p>
 							In the app is a map of Atlanta and the places that I frequent by
@@ -294,14 +303,20 @@ export function Noise() {
 							tranquil soundscape. Each leads to the respective visualizations
 							that can be viewed through the 3D kaleidoscope.
 						</p>
-						<img src="Assets/noise/noise_topview.jpg" alt="Spectogram" />
 						<img
-							src="Assets/noise/noise_sy.jpg"
+							src={require("../Assets/noise/noise_topview.jpg")}
+							alt="Spectogram"
+						/>
+						<img
+							src={require("../Assets/noise/noise_sy.jpg")}
 							alt="Spectogram"
 							class="with_caption pic-adj"
 						/>
 						<p class="credit">Photo credit: Joshua Smith</p>
-						<img src="Assets/noise/noise_gif.gif" alt="Spectogram" />
+						<img
+							src={require("../Assets/noise/noise_gif.gif")}
+							alt="Spectogram"
+						/>
 
 						<p>
 							In interacting with this piece, my hope is for the audience is

@@ -12,7 +12,7 @@ export function Memory() {
 					<h1>Memories as Data</h1>
 
 					<img
-						src="Assets/portrait/portrait_circle.png"
+						src={require("../Assets/portrait/portrait_circle.png")}
 						alt=""
 						class="page_pic"
 						id="spin"
@@ -44,7 +44,7 @@ export function Memory() {
 						</p>
 
 						<img
-							src="Assets/portrait/portrait_data.png"
+							src={require("../Assets/portrait/portrait_data.png")}
 							alt=""
 							class="page_pic with_caption"
 						/>
@@ -71,7 +71,7 @@ export function Memory() {
 						</p>
 
 						<img
-							src="Assets/portrait/portrait_deardata.png"
+							src={require("../Assets/portrait/portrait_deardata.png")}
 							alt=""
 							class="with_caption"
 						/>
@@ -86,7 +86,7 @@ export function Memory() {
 							portrait.
 						</p>
 						<img
-							src="Assets/portrait/portrait_device.png"
+							src={require("../Assets/portrait/portrait_device.png")}
 							alt=""
 							class="smaller_pic with_caption"
 						/>
@@ -96,7 +96,7 @@ export function Memory() {
 						</p>
 
 						<img
-							src="Assets/portrait/portrait_sketch2.png"
+							src={require("../Assets/portrait/portrait_sketch2.png")}
 							alt=""
 							class="smaller_pic"
 						/>
@@ -147,7 +147,7 @@ export function Memory() {
 							layering, zooming in, drawing attention to...
 						</p>
 						<img
-							src="Assets/portrait/portrait_sketch3.png"
+							src={require("../Assets/portrait/portrait_sketch3.png")}
 							alt=""
 							class="page_pic pic-adj"
 						/>
@@ -161,12 +161,12 @@ export function Memory() {
 					<section>
 						<h2>Final Product</h2>
 						<img
-							src="Assets/portrait/portrait_poster.png"
+							src={require("../Assets/portrait/portrait_poster.png")}
 							alt=""
 							class="page_pic pic-adj"
 						/>
 						<img
-							src="Assets/portrait/portrait_people.jpg"
+							src={require("../Assets/portrait/portrait_people.jpg")}
 							alt=""
 							class="with_caption pic-adj"
 						/>

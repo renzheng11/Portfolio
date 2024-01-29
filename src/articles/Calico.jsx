@@ -50,7 +50,7 @@ export function Calico() {
 							Depop.
 						</p>
 						<img
-							src="Assets/calico/calico_research.png"
+							src={require("../Assets/calico/calico_research.png")}
 							alt=""
 							class="page_pic"
 						/>
@@ -115,7 +115,11 @@ export function Calico() {
 							user reviews to keep people accountable in protecting the
 							condition of clothes they receive.
 						</p>
-						<img src="Assets/calico_wire.png" alt="" class="page_pic" />
+						<img
+							src={require("../Assets/calico/calico_wire.png")}
+							alt=""
+							class="page_pic"
+						/>
 						<p>
 							Towards the beginning of the process, the app didn’t feel
 							distinguishable from existing apps and did not highlight a
@@ -128,12 +132,12 @@ export function Calico() {
 					<section>
 						<h2>Final Product</h2>
 						<img
-							src="Assets/calico/calico_mockup.png"
+							src={require("../Assets/calico/calico_mockup.png")}
 							alt=""
 							class="page_pic"
 						/>
 						<img
-							src="Assets/calico/calico_final1.png"
+							src={require("../Assets/calico/calico_final1.png")}
 							alt=""
 							class="page_pic"
 						/>
@@ -146,7 +150,7 @@ export function Calico() {
 						</p>
 
 						<img
-							src="Assets/calico/calico_final2.png"
+							src={require("../Assets/calico/calico_final2.png")}
 							alt=""
 							class="page_pic"
 						/>
@@ -158,7 +162,7 @@ export function Calico() {
 							users share.
 						</p>
 						<img
-							src="Assets/calico/calico_final3.png"
+							src={require("../Assets/calico/calico_final3.png")}
 							alt=""
 							class="page_pic"
 						/>
@@ -170,7 +174,7 @@ export function Calico() {
 							through contactless pick-up to minimize shipping and transport.
 						</p>
 						<img
-							src="Assets/calico/calico_final4.png"
+							src={require("../Assets/calico/calico_final4.png")}
 							alt=""
 							class="page_pic"
 						/>
