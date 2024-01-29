@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7712a26.css",
+    "main.js": "/static/js/main.ecbcce51.js",
+    "static/js/872.fee92302.chunk.js": "/static/js/872.fee92302.chunk.js",
+    "static/js/227.6e4a00f7.chunk.js": "/static/js/227.6e4a00f7.chunk.js",
+    "static/js/526.d3d1dc65.chunk.js": "/static/js/526.d3d1dc65.chunk.js",
+    "static/js/232.6bd1471a.chunk.js": "/static/js/232.6bd1471a.chunk.js",
+    "static/js/237.f39026cd.chunk.js": "/static/js/237.f39026cd.chunk.js",
+    "static/js/357.24fd23eb.chunk.js": "/static/js/357.24fd23eb.chunk.js",
+    "static/media/Poster.png": "/static/media/Poster.d9156b5427d03759748e.png",
+    "static/media/kaleido-title.png": "/static/media/kaleido-title.259da33df9a2c66ce695.png",
+    "static/media/Tickets.png": "/static/media/Tickets.648b78275a9b699d5d05.png",
+    "static/media/noise_final.png": "/static/media/noise_final.8c8e497669a738e52998.png",
+    "static/media/Website-Landing.png": "/static/media/Website-Landing.3f98a825c60d3af730eb.png",
+    "static/media/Bracelets.png": "/static/media/Bracelets.e3b3ae4dd7caf7d2c20d.png",
+    "static/media/portrait_home.png": "/static/media/portrait_home.5a68e80bdf6effb48344.png",
+    "static/media/calico_hero.png": "/static/media/calico_hero.4863db210d565fc3c1d5.png",
+    "static/media/qm_hero.png": "/static/media/qm_hero.4db2ce3efe0710f378a3.png",
+    "index.html": "/index.html",
+    "main.b7712a26.css.map": "/static/css/main.b7712a26.css.map",
+    "main.ecbcce51.js.map": "/static/js/main.ecbcce51.js.map",
+    "872.fee92302.chunk.js.map": "/static/js/872.fee92302.chunk.js.map",
+    "227.6e4a00f7.chunk.js.map": "/static/js/227.6e4a00f7.chunk.js.map",
+    "526.d3d1dc65.chunk.js.map": "/static/js/526.d3d1dc65.chunk.js.map",
+    "232.6bd1471a.chunk.js.map": "/static/js/232.6bd1471a.chunk.js.map",
+    "237.f39026cd.chunk.js.map": "/static/js/237.f39026cd.chunk.js.map",
+    "357.24fd23eb.chunk.js.map": "/static/js/357.24fd23eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7712a26.css",
+    "static/js/main.ecbcce51.js"
+  ]
+}
