@@ -21,7 +21,6 @@ const Project = (props) => {
 									/>
 								</div>
 							</div>
-							{/* <div className="project-description">{description}</div> */}
 							<div className="project-type">{type}</div>
 						</div>
 						<div className="project-image">
