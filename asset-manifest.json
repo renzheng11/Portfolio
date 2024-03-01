@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.38381445.css",
-    "main.js": "/static/js/main.63493faf.js",
+    "main.css": "/static/css/main.0b1f0d2e.css",
+    "main.js": "/static/js/main.64345c7e.js",
     "static/js/872.bb0ac4f4.chunk.js": "/static/js/872.bb0ac4f4.chunk.js",
     "static/js/227.ea5cdafd.chunk.js": "/static/js/227.ea5cdafd.chunk.js",
     "static/js/526.3b0ad1ac.chunk.js": "/static/js/526.3b0ad1ac.chunk.js",
@@ -35,6 +35,7 @@
     "static/media/noise_building.png": "/static/media/noise_building.15e705748a2c38ba7db9.png",
     "static/media/Website-Landing.png": "/static/media/Website-Landing.3f98a825c60d3af730eb.png",
     "static/media/noise_sy.jpg": "/static/media/noise_sy.49dcf2d164989373aef7.jpg",
+    "static/media/qm-website-mockups.png": "/static/media/qm-website-mockups.29e18b88ceb32e05456b.png",
     "static/media/calico_final1.png": "/static/media/calico_final1.f417b16aa72536ed5bc7.png",
     "static/media/Bracelets.png": "/static/media/Bracelets.e3b3ae4dd7caf7d2c20d.png",
     "static/media/noise_topview.jpg": "/static/media/noise_topview.f8b590ff3fd7c06491e2.jpg",
@@ -43,18 +44,20 @@
     "static/media/noise_apps.png": "/static/media/noise_apps.d302772caea692ffc669.png",
     "static/media/calico_mockup.png": "/static/media/calico_mockup.9b9ec7662cb208620410.png",
     "static/media/portrait_sketch3.png": "/static/media/portrait_sketch3.867154c96abd9d75a54c.png",
+    "static/media/qm-journey-map.png": "/static/media/qm-journey-map.7f4300843070c4aa4c3b.png",
     "static/media/calico_research.png": "/static/media/calico_research.f0f121678f6ba51f4eba.png",
     "static/media/calico_final2.png": "/static/media/calico_final2.e7b83b50e7ad4f312546.png",
     "static/media/calico_hero.png": "/static/media/calico_hero.4863db210d565fc3c1d5.png",
     "static/media/calico_final3.png": "/static/media/calico_final3.da3e73e9b9cc125ddcde.png",
     "static/media/qm_hero.png": "/static/media/qm_hero.4db2ce3efe0710f378a3.png",
+    "static/media/qm-high-level-flow.png": "/static/media/qm-high-level-flow.f8aa6420eda6d2d45079.png",
     "static/media/calico_final4.png": "/static/media/calico_final4.51e066ad9cab06ae323e.png",
     "static/media/portrait_data.png": "/static/media/portrait_data.0e35ec1fc5c263365c29.png",
     "static/media/calico_wire.png": "/static/media/calico_wire.7c7a461061b8092192ea.png",
     "static/media/noise_waveform.png": "/static/media/noise_waveform.59078d9ae1d62e7c8766.png",
     "index.html": "/index.html",
-    "main.38381445.css.map": "/static/css/main.38381445.css.map",
-    "main.63493faf.js.map": "/static/js/main.63493faf.js.map",
+    "main.0b1f0d2e.css.map": "/static/css/main.0b1f0d2e.css.map",
+    "main.64345c7e.js.map": "/static/js/main.64345c7e.js.map",
     "872.bb0ac4f4.chunk.js.map": "/static/js/872.bb0ac4f4.chunk.js.map",
     "227.ea5cdafd.chunk.js.map": "/static/js/227.ea5cdafd.chunk.js.map",
     "526.3b0ad1ac.chunk.js.map": "/static/js/526.3b0ad1ac.chunk.js.map",
@@ -63,7 +66,7 @@
     "357.a80aaf25.chunk.js.map": "/static/js/357.a80aaf25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38381445.css",
-    "static/js/main.63493faf.js"
+    "static/css/main.0b1f0d2e.css",
+    "static/js/main.64345c7e.js"
   ]
 }
