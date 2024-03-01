@@ -11,34 +11,34 @@ import "./App.css";
 export function Home() {
 	return (
 		<body>
-			{/* <div class="custom-cursor"></div> */}
-			{/* <div class="hero">
+			{/* <div className="custom-cursor"></div> */}
+			{/* <div className="hero">
 				<Spline scene="https://prod.spline.design/g6E0pvg40VPkM-8E/scene.splinecode" />
 			</div> */}
 			{/* <spline-viewer
-        class="hero"
+        className="hero"
         url="https://prod.spline.design/g6E0pvg40VPkM-8E/scene.splinecode"
       ></spline-viewer> */}
 
-			{/* <div class="test">jp</div> */}
+			{/* <div className="test">jp</div> */}
 
-			<div class="home-content">
-				<div class="blobs">
-					<div class="blob blob-2">1</div>
-					<div class="blob blob-1">2</div>
-					<wiv class="blob blob-3">3</wiv>
+			<div className="home-content">
+				<div className="blobs">
+					<div className="blob blob-2">1</div>
+					<div className="blob blob-1">2</div>
+					<wiv className="blob blob-3">3</wiv>
 				</div>
 
-				<div class="hider"></div>
-				<div class="burger-white-bg"></div>
-				<div class="content">
-					<div class="wrapper">
-						<div class="nav">
-							<Link to={"/"} class="brand">
+				<div className="hider"></div>
+				<div className="burger-white-bg"></div>
+				<div className="content">
+					<div className="wrapper">
+						<div className="nav">
+							<Link to={"/"} className="brand">
 								✻ Ren Zheng
 							</Link>
 
-							<button class="burger" onclick="toggleMenu()">
+							<button className="burger" onclick="toggleMenu()">
 								<img
 									id="burger-icon"
 									data-type="bars"
@@ -46,10 +46,10 @@ export function Home() {
 									alt=""
 								/>
 							</button>
-							<div class="menu">
+							<div className="menu">
 								<Link
 									to={"/"}
-									class="brand"
+									className="brand"
 									onClick={() => {
 										const anchor = document.querySelector(
 											"#project-destination"
@@ -68,30 +68,30 @@ export function Home() {
   								spy={true}
   								smooth={true}
   								duration={500}
-  								className="some-class"
-  								activeClass="some-active-class"
+  								classNameName="some-className"
+  								activeclassName="some-active-className"
   							>
   								Projects
   							</ScrollLink> */}
 
-								<Link to={"/about"} class="brand">
+								<Link to={"/about"} classNameName="brand">
 									About
 								</Link>
-								<Link to={"/about"} class="brand">
+								<Link to={"/about"} classNameName="brand">
 									Contact
 								</Link>
 							</div>
 						</div>
 
-						<div class="landing">
-							<div class="headline-name">
+						<div className="landing">
+							<div className="headline-name">
 								Hello, I'm Ren. I'm an&nbsp; <em>interaction designer</em>{" "}
 								studying and living in Atlanta.
 							</div>
-							<div class="headline-text">
+							<div className="headline-text">
 								My focus is on crafting&nbsp;
 								<span id="memory">memorable experiences</span> through visual
-								design and storytelling.
+								design andz storytelling.
 							</div>
 						</div>
 					</div>

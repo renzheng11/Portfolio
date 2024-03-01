@@ -12,7 +12,7 @@ export function AllProjects() {
 					<Project
 						title={project.title}
 						description={project.description}
-						type={project.type}
+						types={project.types}
 						image={project.image}
 						// image={require("../../Assets/kaleido/kaleido-title.png")} // with require}
 						link={project.link}

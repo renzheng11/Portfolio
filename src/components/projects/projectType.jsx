@@ -2,14 +2,14 @@ import React from "react";
 
 import "../../App.css";
 
-const Project = (props) => {
-	const { title, description, type, image, link } = props;
+export const ProjectType = (props) => {
+	const { type } = props;
 
 	return (
 		<React.Fragment>
-			<div className="project-type"></div>
+			<div className="project-type">{type}</div>
 		</React.Fragment>
 	);
 };
 
-export default Project;
+// export ProjectType;
