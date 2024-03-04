@@ -91,7 +91,7 @@ export function Home() {
 							<div className="headline-text">
 								My focus is on crafting&nbsp;
 								<span id="memory">memorable experiences</span> through visual
-								design andz storytelling.
+								design and storytelling.
 							</div>
 						</div>
 					</div>
