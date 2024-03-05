@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.553a79fe.css",
-    "main.js": "/static/js/main.09c9b54a.js",
+    "main.css": "/static/css/main.e0b68936.css",
+    "main.js": "/static/js/main.905a99be.js",
     "static/js/872.bb0ac4f4.chunk.js": "/static/js/872.bb0ac4f4.chunk.js",
     "static/js/227.ea5cdafd.chunk.js": "/static/js/227.ea5cdafd.chunk.js",
     "static/js/526.3b0ad1ac.chunk.js": "/static/js/526.3b0ad1ac.chunk.js",
@@ -61,8 +61,8 @@
     "static/media/calico_wire.png": "/static/media/calico_wire.7c7a461061b8092192ea.png",
     "static/media/noise_waveform.png": "/static/media/noise_waveform.59078d9ae1d62e7c8766.png",
     "index.html": "/index.html",
-    "main.553a79fe.css.map": "/static/css/main.553a79fe.css.map",
-    "main.09c9b54a.js.map": "/static/js/main.09c9b54a.js.map",
+    "main.e0b68936.css.map": "/static/css/main.e0b68936.css.map",
+    "main.905a99be.js.map": "/static/js/main.905a99be.js.map",
     "872.bb0ac4f4.chunk.js.map": "/static/js/872.bb0ac4f4.chunk.js.map",
     "227.ea5cdafd.chunk.js.map": "/static/js/227.ea5cdafd.chunk.js.map",
     "526.3b0ad1ac.chunk.js.map": "/static/js/526.3b0ad1ac.chunk.js.map",
@@ -71,7 +71,7 @@
     "357.a80aaf25.chunk.js.map": "/static/js/357.a80aaf25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.553a79fe.css",
-    "static/js/main.09c9b54a.js"
+    "static/css/main.e0b68936.css",
+    "static/js/main.905a99be.js"
   ]
 }
