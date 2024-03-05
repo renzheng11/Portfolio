@@ -26,9 +26,8 @@ export function Home() {
 			<div className="home-content">
 				<div className="blob-wrapper">
 					<div className="blobs">
-						{/* <div className="blob blob-2">1</div> */}
-						{/* <div className="blob blob-1">2</div> */}
-						<div className="blob blob-3">3</div>
+						<div className="blob blob-1">1</div>
+						<div className="blob blob-2">2</div>
 					</div>
 				</div>
 
