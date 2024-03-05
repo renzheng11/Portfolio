@@ -6,22 +6,20 @@ import "../../App.css";
 const Project = (props) => {
 	const { title, description, types, image, link } = props;
 
-	console.log(types);
-
 	return (
 		<React.Fragment>
 			<div className="project">
-				<Link to={link} class="link">
+				<Link to={link} className="link">
 					<div className="project-container">
 						<div className="project-text">
 							<div>
 								<div className="project-title">{title}</div>
-								<div class="right-arrow">
+								{/* <div class="right-arrow">
 									<img
 										src={require("../../Assets/icons/right-arrow.png")}
 										alt="project"
 									/>
-								</div>
+								</div> */}
 							</div>
 							{/* <div className="project-type">{type}</div> */}
 							<div className="project-types">

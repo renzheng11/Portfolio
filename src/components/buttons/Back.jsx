@@ -4,7 +4,7 @@ export function Back() {
 	return (
 		<div>
 			<Link to={"/"} class="back-btn">
-				<img src={require("../../Assets/icons/left-arrow-color.png")} alt="" />
+				<img src={require("../../Assets/icons/back-arrow.png")} alt="" />
 			</Link>
 		</div>
 	);

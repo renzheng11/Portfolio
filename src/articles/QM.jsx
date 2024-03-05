@@ -58,18 +58,16 @@ export function QM() {
 
 					<h2>Design</h2>
 
-					<p style={{ marginBottom: 0 }}>
-						Conceptualizing the designs involved:
-					</p>
-					<ul style={{ marginTop: 4 }}>
+					<p>Conceptualizing the designs involved:</p>
+					<ul>
 						<li>sketching designs</li>
 						<li>making prototypes of the interactions</li>
 						<li>conducting guerrilla user testing of the visualizations</li>
 						<li>iteration through both design and development</li>
 					</ul>
 
-					<strong>Insights from user testing</strong>
-					<ul style={{ marginTop: 8 }}>
+					<h3>Insights from user testing</h3>
+					<ul>
 						<li>Colors play a big role in grouping conceptual groups.</li>
 						<li>
 							People can get overwhelemed when presented too much information
@@ -81,8 +79,8 @@ export function QM() {
 						</li>
 					</ul>
 
-					<strong>Design Considerations</strong>
-					<ul style={{ marginTop: 8 }}>
+					<h3>Design Considerations</h3>
+					<ul>
 						<li>
 							Make sure colors are accessible to visually impaired and does not
 							detract from understanding the visualizations.'
@@ -98,9 +96,9 @@ export function QM() {
 					</ul>
 
 					<h2>Product</h2>
-					<p>Website</p>
+					<h3>Website</h3>
 					<img src={require("../Assets/qm/qm-website-mockups.png")} alt="" />
-					<p>Visualizations</p>
+					<h3>Visualizations</h3>
 					<div>
 						<img
 							src={require("../Assets/qm/qm_gif_width.gif")}
@@ -126,7 +124,7 @@ export function QM() {
 						solutions that help them to learn in more holistic and intuitive
 						ways.
 					</p>
-					<Next link={"/noise"} />
+					<Next link={"/kaleido"} />
 				</div>
 			</div>
 		</body>

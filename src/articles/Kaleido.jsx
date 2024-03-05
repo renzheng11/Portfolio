@@ -34,7 +34,7 @@ export function Kaleido() {
 						/>
 					</div>
 
-					<Next link={"/qm"} />
+					<Next link={"/calico"} />
 				</div>
 			</div>
 		</body>

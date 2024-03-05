@@ -23,19 +23,32 @@ const INFO = {
 
 	projects: [
 		{
+			title: "LearnQM Visualizations",
+			description: "Description",
+			types: ["Interaction Design", "Web Dev"],
+			image: require("../Assets/qm/qm_hero.png"),
+			link: "/qm",
+		},
+		{
 			title: "Kaleido",
 			description: "Description",
 			types: ["Branding", "Visual Design"],
 			image: require("../Assets/kaleido/kaleido-title.png"),
 			link: "/kaleido",
 		},
-
 		{
-			title: "Experiential Visualization",
+			title: "Closet Share",
 			description: "Description",
-			types: ["Interaction Design", "Web Development"],
-			image: require("../Assets/qm/qm_hero.png"),
-			link: "/qm",
+			types: ["UI", "Speculative Design"],
+			image: require("../Assets/calico/calico_hero.png"),
+			link: "/calico",
+		},
+		{
+			title: "Access H2O",
+			description: "Description",
+			types: ["UX UI"],
+			image: require("../Assets/access/access_home.png"),
+			link: "/accessh20",
 		},
 
 		{
@@ -52,14 +65,6 @@ const INFO = {
 			types: ["Data Visualization"],
 			image: require("../Assets/portrait/portrait_home.png"),
 			link: "/memories",
-		},
-
-		{
-			title: "Calico",
-			description: "Description",
-			types: ["UI", "Speculative Design"],
-			image: require("../Assets/calico/calico_hero.png"),
-			link: "/calico",
 		},
 	],
 };

@@ -24,22 +24,22 @@
 
 // burger.onClick
 
-function toggleMenu(params) {
-	const burgerMenu = document.querySelector(".menu");
-	burgerMenu.classList.toggle("show");
-	const burgerWhiteBackground = document.querySelector(".burger-white-bg");
-	burgerWhiteBackground.classList.toggle("show");
-	const burgerIcon = document.querySelector("#burger-icon");
+// function toggleMenu(params) {
+// 	const burgerMenu = document.querySelector(".menu");
+// 	burgerMenu.classList.toggle("show");
+// 	const burgerWhiteBackground = document.querySelector(".burger-white-bg");
+// 	burgerWhiteBackground.classList.toggle("show");
+// 	const burgerIcon = document.querySelector("#burger-icon");
 
-	console.log(burgerIcon.dataset.type);
-	if (burgerIcon.dataset.type == "bars") {
-		burgerIcon.src = "./Assets/menu-x.png";
-		burgerIcon.dataset.type = "x";
-	} else {
-		burgerIcon.src = "./Assets/menu-bars.png";
-		burgerIcon.dataset.type = "bars";
-	}
-}
+// 	console.log(burgerIcon.dataset.type);
+// 	if (burgerIcon.dataset.type == "bars") {
+// 		burgerIcon.src = "./Assets/menu-x.png";
+// 		burgerIcon.dataset.type = "x";
+// 	} else {
+// 		burgerIcon.src = "./Assets/menu-bars.png";
+// 		burgerIcon.dataset.type = "bars";
+// 	}
+// }
 
 // const cursor = document.querySelector(".custom-cursor");
 // document.addEventListener("mousemove", function (e) {

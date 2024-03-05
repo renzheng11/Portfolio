@@ -172,7 +172,7 @@ export function Memory() {
 						/>
 						<p class="credit">Photo credit: Joshua Smith</p>
 					</section>
-					<Next link={"/calico"} />
+					<Next link={"/"} />
 				</div>
 			</div>
 		</body>

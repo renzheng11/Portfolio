@@ -14,17 +14,61 @@ root {
 	font-family: "IBM Plex Mono";
 }
 
-html {
-	scroll-behavior: smooth;
-}
+html,
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 	font-family: Inter;
+}
 
-	position: relative;
+.home-content {
 	overflow-x: hidden;
-	background-color: white;
+}
+
+.wrapper {
+	display: flex;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.right-wrapper {
+	margin-right: 4rem;
+	margin-bottom: 3rem;
+}
+
+.left-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+	margin-left: 4rem;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 2rem;
+}
+
+.link {
+	display: flex;
+	margin-bottom: 0.2rem;
+}
+
+.link-logo img {
+	width: 20px;
+	height: 20px;
+}
+
+.link a {
+	margin-left: 0.7rem;
+	color: black;
+}
+
+.all-projects-container {
+	margin-bottom: 2rem;
 }
 
 h1 {
@@ -54,11 +98,6 @@ h3 {
 	}
 }
 
-.content {
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -80,14 +119,14 @@ h3 {
 }
 
 footer {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	/* color: #5e5e5eff; */
+	font-size: 0.8rem;
+	margin-bottom: 3rem;
 	color: var(--primary);
 }
 
 #heart {
-	color: #f9306a;
+	color: #5ca621;
+	font-size: 1rem;
 }
 
 .menu a {
@@ -96,42 +135,41 @@ footer {
 }
 
 .brand {
+	position: absolute;
 	font-size: 1rem;
 	text-decoration: none;
 	color: var(--primary);
 }
 
-.wrapper {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+.brand img {
+	width: 60px;
 }
 
 .landing {
+	width: 400px;
 	display: flex;
+	flex-direction: column;
+	position: absolute;
 	justify-content: space-between;
+	margin-top: 6rem;
 }
 
 .headline-name {
-	font-size: 2rem;
-	width: 48%;
-	transform: translateY(-40px);
+	font-size: 1rem;
+	font-weight: 600;
 	transition: 0.6s ease;
 	color: var(--primary);
 }
 
 .headline-name.show {
-	transform: translateY(-40px);
 	opacity: 1;
 }
 
 .headline-text {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	max-width: 400px;
 	color: var(--primary);
-	transform: translateY(-40px);
-	transition: 1s ease;
+	padding-top: 2rem;
 }
 
 .headline-text.show {
@@ -139,18 +177,29 @@ footer {
 	opacity: 1;
 }
 
-.all-projects-container {
-	margin-top: 6rem;
+.pronouns {
+	font-weight: 400;
+}
+
+.projects-title {
+	display: inline-block;
+	margin-top: 2rem;
+	font-family: "IBM Plex Mono", monospace;
+	border: black 1px solid;
+	background-color: white;
+	padding: 0.4rem;
 }
 
 .project-container {
 	display: flex;
+	width: 540px;
+	height: 140px;
 	justify-content: space-between;
 	font-weight: 300;
+	border: black 1px solid;
+	margin-top: 1rem;
 
-	transform: translateY(20px);
-	transition: 0.56s ease-out;
-	margin-top: 3rem;
+	background-color: white;
 }
 
 .project.show {
@@ -158,33 +207,20 @@ footer {
 	opacity: 1;
 }
 
-.right-arrow {
-	opacity: 0;
-	transition: 0.3s;
-	display: inline-block;
-}
-
-.right-arrow img {
-	height: 1.1rem;
-	margin-left: 0.2rem;
-	transform: translateY(-0.1rem);
-}
-
-.project:hover .right-arrow {
-	opacity: 1;
-	transform: translateX(6px);
+.project-text {
+	padding: 1.4rem;
 }
 
 .project-title {
-	font-size: 2rem;
+	font-size: 1rem;
+	font-weight: 600;
 	transform: translateX(-1px);
-	margin-bottom: 0.4rem;
 	color: black;
 	display: inline;
 }
 
-.project:hover .project-title {
-	color: #f9306a;
+.project-container:hover .project-title {
+	color: #5ca621;
 }
 
 .project-description {
@@ -198,30 +234,24 @@ footer {
 	color: black;
 	font-size: 1rem;
 	margin-left: 0.1rem;
-	margin-top: 1rem;
+	font-family: "Inter", sans-serif;
 }
 
 .project-type {
-	/* margin: 1rem; */
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
 	margin-right: 0.6rem;
-	padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-	/* background: #ffadc4; */
+	padding: 0.2rem 0.3rem 0.2rem 0.3rem;
 	border: black solid 1px;
 	color: black;
-	border-radius: 1rem;
 }
 
 .project-image img {
-	width: 500px;
-	height: 360px;
-	border-radius: 12px;
+	width: 200px;
+	height: 100%;
 	object-fit: cover;
 	z-index: 4;
 }
-
-/* .project:hover img {
-	filter: brightness(50%);
-} */
 
 .test {
 	color: red;
@@ -231,6 +261,7 @@ footer {
 	position: relative;
 	width: 100vw;
 	background-color: red;
+	z-index: -1;
 }
 
 .blob {
@@ -256,32 +287,29 @@ footer {
 	top: -100vh;
 	left: -54vw;
 	background: radial-gradient(#f785ff 10%, rgba(255, 255, 255, 0) 80%);
-	/* overflow: hidden; */
 }
 
 .blob-2 {
 	top: -100vh;
 	left: 0vw;
-	background: radial-gradient(#99a7ff 10%, rgba(255, 255, 255, 0) 80%);
+	background: radial-gradient(#ffc56f 10%, rgba(255, 255, 255, 0) 80%);
 }
 
 .blob-3 {
-	top: -100vh;
-	left: 60vw;
-	background: radial-gradient(#6bdcff 10%, rgba(255, 255, 255, 0) 80%);
+	top: -80vh;
+	left: 30vw;
+	background: radial-gradient(#86ec35 10%, rgba(255, 255, 255, 0) 80%);
+	animation: blobAnimation 16s infinite ease-in-out;
 }
 
 .page {
 	display: flex;
 	flex-direction: column;
 	width: 600px;
-	/* row-gap: 1rem; */
 }
 
 .page img {
 	width: 600px;
-	/* margin-top: 2rem; */
-	/* margin-bottom: 2rem; */
 }
 
 .pic-adj {
@@ -295,35 +323,47 @@ footer {
 
 .page p,
 .page li {
-	line-height: 1.6rem;
+	margin-top: 0.4rem;
+	margin-bottom: 0;
+	line-height: 1.7rem;
 	font-family: "Inter";
+}
+
+.page img {
+	margin-top: 1rem;
 }
 
 .page h1 {
 	margin-top: 160px;
 }
 
+.page h2 {
+	margin-top: 1.8rem;
+}
+.page h3 {
+	font-size: 1rem;
+	margin-top: 1rem;
+	font-weight: 600;
+}
+
+.page ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 .page-wrapper {
 	display: flex;
 	justify-content: center;
+	height: 100%;
+	overflow: auto;
 }
-/* 
-.construction {
-	margin-left: 30%;
-} */
 
 .construction-text {
 	position: absolute;
 	margin-top: 30px;
-	/* margin-left: 400px; */
 }
 
 .back-btn {
-	/* font-family: "Inter", monospace; */
-	/* text-decoration: none; */
-	/* font-size: 26px; */
-	/* color: black; */
-	/* margin-top: 6rem; */
 	display: inline;
 	position: absolute;
 	margin: 0;
@@ -334,14 +374,9 @@ footer {
 	margin-top: 110px;
 	width: 35px;
 	height: 20px;
-	/* filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(97%)
-		contrast(104%); */
 }
 
 .back-btn:hover img {
-	/* filter: invert(26%) sepia(50%) saturate(3792%) hue-rotate(327deg)
-		brightness(107%) contrast(95%); */
-	/* content: url(require("../../Assets/icons/left-arrow-color.png")); */
 	transform: translateX(-10px);
 	transition: 0.3s ease;
 }
@@ -352,20 +387,21 @@ footer {
 }
 
 .next-btn {
-	font-family: "Inter", monospace;
-	font-size: 1.2rem;
+	font-family: "IBM Plex Mono", monospace;
+	font-size: 1rem;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
-	display: block;
-	width: 7.2rem;
+	display: inline-block;
+
 	text-decoration: none;
-	color: #f9306a;
+	color: #5ca621;
+	border: 1.6px solid #5ca621;
+
+	padding: 0.2rem 0.4rem 0.2rem 0.4rem;
 }
 .next-btn:hover {
-	/* color: #f9306a; */
-	background-color: #f9306a;
+	background-color: #5ca621;
 	text-decoration: none;
-	/* transition: 0.3s ease; */
 	color: white;
 }
 
@@ -373,7 +409,6 @@ footer {
 	font-family: "IBM Plex Mono", monospace;
 	position: absolute;
 	top: 40%;
-	/* padding-left: 20rem; */
 	width: 1000px;
 	color: black;
 	margin: auto 0;
@@ -387,7 +422,6 @@ footer {
 	padding-bottom: 20px;
 }
 .about-link a {
-	/* text-decoration: none; */
 	font-family: "IBM Plex Mono", monospace;
 	color: black;
 }
@@ -405,7 +439,6 @@ footer {
 }
 
 .about a {
-	/* font-family: "Inter", monospace; */
 	text-decoration: none;
 	color: black;
 }
@@ -416,149 +449,132 @@ footer {
 
 /* xxlg */
 @media (min-width: 1600px) {
-	.home-content {
-		margin-left: 14%;
-		margin-right: 14%;
-	}
 }
 
 /* xlg */
 @media (max-width: 1400px) {
-	.home-content {
-		margin-left: 0%;
-		margin-right: 0%;
-	}
 }
 
 /* lg */
 @media (max-width: 1200px) {
-	.project-title {
-		max-width: 100px;
+	.landing {
+		width: 340px;
 	}
-	.project-types {
-		max-width: 80%;
-		font-size: 1.4rem;
+	.right-wrapper {
+		margin-left: 4rem;
+	}
+	.headline-name {
+		font-size: 0.9rem;
+	}
+	.headline-text {
+		font-size: 0.9rem;
 	}
 }
 
 /* m */
 @media (max-width: 992px) {
+	.blob-3 {
+		top: -120vh;
+		left: 30vw;
+	}
 	.landing {
+		position: relative;
+	}
+
+	.wrapper {
 		flex-direction: column;
-		gap: 1rem;
 	}
-
-	.headline-name {
-		font-size: 2rem;
-		width: 80%;
+	.brand {
+		position: relative;
 	}
-
-	.headline-text {
-		font-size: 1.28rem;
+	.links {
+		font-size: 0.8rem;
+		position: relative;
+		margin-top: 3rem;
+		bottom: 0;
 	}
-
 	.project-container {
 		flex-direction: column;
+		height: 100%;
 	}
 
-	.project-text {
-		padding-bottom: 2rem;
-	}
-
-	.project {
-		flex-direction: column;
-		justify-content: stretch;
-		gap: 1rem;
-	}
-
-	.project-img img {
+	.project-image img {
 		width: 100%;
-		height: 500px;
+	}
+	.project-title {
+		font-size: 0.8rem;
+	}
+	.projects-title {
+		font-size: 0.8rem;
+		margin-top: 1rem;
+	}
+	.project-types {
+		font-size: 0.8rem;
+	}
+	.left-side {
+		margin-bottom: 1rem;
 	}
 }
 
 /* s */
 @media (max-width: 768px) {
+	.headline-name {
+		font-size: 0.8rem;
+	}
+	.headline-text {
+		font-size: 0.8rem;
+	}
+	.page {
+		width: 500px;
+	}
+	.page img {
+		width: 500px;
+	}
+	.back-btn img {
+		width: 35px;
+	}
 }
 
 /* xs */
 @media (max-width: 576px) {
-	.headline-name {
-		font-size: 1.2rem;
-		width: 100%;
+	.landing {
+		margin-top: 15rem;
+		width: 240px;
 	}
-
-	.headline-text {
-		font-size: 1rem;
-		width: 100%;
+	.left-side,
+	.right-wrapper {
+		margin-left: 3.2rem;
 	}
-
-	.menu {
-		flex-direction: column;
-		position: absolute;
-		top: 4rem;
-
-		transform: translateY(-20px);
-		opacity: 0;
+	.project-type {
+		font-size: 0.7rem;
 	}
-
-	.menu.show {
-		transform: translateY(20px);
-		transition: 0.6s ease;
-		opacity: 1;
+	.back-btn {
+		margin-top: 1rem;
+		top: -60px;
 	}
-
-	.burger-white-bg.show {
-		width: 100%;
-		height: 16rem;
-		position: absolute;
-		padding: 0;
-		margin: 0;
-		background-color: white;
-		z-index: -1;
-	}
-
-	.menu a {
-		margin: 0.4rem;
-		margin: 1rem;
-	}
-
-	.burger {
-		display: block;
-		background-color: transparent;
-		background-repeat: no-repeat;
-		border: none;
-		margin: 0 -12px 0 0;
-		padding: 0;
-	}
-
-	.burger img {
-		width: 1.4rem;
-	}
-
-	.project-title {
+	.page h1 {
+		margin-top: 4rem;
 		font-size: 1.6rem;
-		color: #f9306a;
 	}
-
-	.project-description {
+	.page h2 {
 		font-size: 1.2rem;
 	}
-
-	.project-image img {
-		width: 100%;
-		height: 200px;
-	}
-
-	.right-arrow {
-		display: none;
-	}
-
-	.page {
-		width: 80%;
-	}
-
 	.page img {
-		width: 100%;
+		width: 90%;
+	}
+	.page {
+		margin: 10%;
+	}
+	.page p {
+		font-size: 0.8rem;
+		line-height: 1.4rem;
+	}
+
+	.page ul {
+		font-size: 0.8rem;
+		line-height: 0.8rem;
+	}
+	.back-btn img {
+		width: 35px;
 	}
 }

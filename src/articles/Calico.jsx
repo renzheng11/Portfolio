@@ -1,5 +1,4 @@
 import React from "react";
-// import "./animations.js";
 import { Back } from "../components/buttons/Back";
 import { Next } from "../components/buttons/Next";
 
@@ -10,6 +9,11 @@ export function Calico() {
 				<div class="page">
 					<Back />
 					<h1>Calico Closet Share</h1>
+					<img
+						src={require("../Assets/calico/calico_poster.png")}
+						alt=""
+						class="page_pic"
+					/>
 
 					<section>
 						<h2>Problem Brief</h2>
@@ -55,7 +59,7 @@ export function Calico() {
 							class="page_pic"
 						/>
 						<p>
-							<strong>Key observations</strong> made from observing these apps:
+							<strong>Key insights</strong> made from observing these apps:
 						</p>
 						<ul>
 							<li>
@@ -195,7 +199,7 @@ export function Calico() {
 							reimagined future, showcased in the final app.
 						</p>
 					</section>
-					<Next link={"/"} />
+					<Next link={"/accessh20"} />
 				</div>
 			</div>
 		</body>
