@@ -12,24 +12,18 @@ import { useRef, useEffect, useCallback } from "react";
 export function Home() {
 	return (
 		<body>
-			{/* <div className="custom-cursor"></div> */}
-			{/* <div className="hero">
-				<Spline scene="https://prod.spline.design/g6E0pvg40VPkM-8E/scene.splinecode" />
-			</div> */}
-			{/* <spline-viewer
-        className="hero"
-        url="https://prod.spline.design/g6E0pvg40VPkM-8E/scene.splinecode"
-      ></spline-viewer> */}
-
-			{/* <div className="test">jp</div> */}
-
 			<div className="home-content">
-				<div className="blob-wrapper">
+				<div className="hero">
+					<Spline scene="https://prod.spline.design/g6E0pvg40VPkM-8E/scene.splinecode" />
+				</div>
+				<div className="test"></div>
+				<div className="bg"></div>
+				{/* <div className="blob-wrapper">
 					<div className="blobs">
 						<div className="blob blob-1">1</div>
 						<div className="blob blob-2">2</div>
 					</div>
-				</div>
+				</div> */}
 
 				<div className="hider"></div>
 				<div className="burger-white-bg"></div>
@@ -39,11 +33,11 @@ export function Home() {
 							<div className="top">
 								<div className="nav">
 									<Link to={"/"} className="brand">
-										{/* ✻ Ren Zheng */}
-										<img
+										✻ Ren Zheng
+										{/* <img
 											src={require("../src/Assets/icons/logo.png")}
 											alt="project"
-										/>
+										/> */}
 									</Link>
 								</div>
 								<div className="landing">
