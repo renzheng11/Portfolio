@@ -3,12 +3,17 @@ import { AllProjects } from "./components/projects/allProjects";
 import { Link } from "react-router-dom";
 // import Scroll from "react-scroll";
 import Spline from "@splinetool/react-spline";
-
+// import { Gradient } from "./Gradient.js";
 import "./App.css";
-
-// const ScrollLink = Scroll.ScrollLink;
-
 import { useRef, useEffect, useCallback } from "react";
+
+// const ScrollLink = Scroll.ScrollLi2nk;
+// Create your instance
+// const gradient = new Gradient();
+
+// Call `initGradient` with the selector to your canvas
+// gradient.initGradient("#gradient-canvas");
+
 export function Home() {
 	return (
 		<body>
@@ -32,18 +37,18 @@ export function Home() {
 						<div className="left-side">
 							<div className="top">
 								<div className="nav">
-									<Link to={"/"} className="brand">
-										✻ Ren Zheng
+									<div className="brand">
+										<span>Ren Zheng</span>
 										{/* <img
 											src={require("../src/Assets/icons/logo.png")}
 											alt="project"
 										/> */}
-									</Link>
+									</div>
 								</div>
 								<div className="landing">
 									<div className="headline-name">
 										Hello, I'm Ren <span className="pronouns">(they/them)</span>
-										. I'm a multi-disciplinary designer studying and living in
+										. I'm a designer and developer studying and living in
 										Atlanta.
 									</div>
 									<div className="headline-text">
@@ -98,13 +103,15 @@ export function Home() {
 						</div>
 						<div className="right-side">
 							<div className="right-wrapper">
-								<div className="projects-title">PROJECTS</div>
+								<div className="work">
+									<span>Work</span>
+								</div>
 								{/* <div id="project-destination"></div> */}
 								<div className="all-projects">
 									<AllProjects />
 								</div>
 								<footer>
-									Made with&nbsp;<span id="heart">♥</span> Updated March 2024
+									Updated March 2024 <span id="heart">♥</span>
 								</footer>
 							</div>
 						</div>
