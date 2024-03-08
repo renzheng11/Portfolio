@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@font-face {
+	font-family: "SuisseIntlRegular";
+	src: url("./fonts/SuisseIntl-Regular.ttf");
+}
+
+@font-face {
+	font-family: "SuisseIntl-Bold";
+	src: url("./fonts/SuisseIntl-Bold.ttf");
+}
 
 .link {
 	display: block;
@@ -41,35 +52,44 @@ body {
 
 .wrapper {
 	display: flex;
+	flex-direction: column;
 	height: 100vh;
+	width: 100vw;
+	/* justify-content: space-between; */
+}
+
+.side-wrapper {
+	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
 .right-wrapper {
 	display: flex;
 	flex-direction: column;
-	margin-right: 4rem;
-	margin-bottom: 3rem;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
 }
 
 .left-side {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: 3rem;
-	margin-left: 4rem;
+	margin-bottom: 2rem;
+	margin-left: 2rem;
 }
 
 .links {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	bottom: 3rem;
+	bottom: 2rem;
 }
 
 .link {
 	display: flex;
-	margin-bottom: 0.2rem;
+	margin-top: 0.2rem;
+	font-size: 0.9rem;
 }
 
 .link-logo img {
@@ -81,9 +101,15 @@ body {
 .link a {
 	margin-left: 0.7rem;
 	color: var(--primary);
+	text-decoration: none;
+}
+
+.link a:hover {
+	text-decoration-line: underline;
 }
 
 .all-projects-container {
+	margin-top: 5rem;
 	margin-bottom: 2rem;
 }
 
@@ -117,13 +143,29 @@ h3 {
 	overflow-y: hidden;
 }
 
+.navParent {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+	/* padding: 2rem; */
+}
+
 .nav {
+	/* position: fixed; */
 	display: flex;
+	flex-direction: row;
+	/* width: 100%; */
 	justify-content: space-between;
-	align-items: flex-start;
+	/* align-items: flex-start; */
 	font-weight: 400;
-	margin-top: 40px;
+	padding-top: 1.4rem;
+	/* margin-top: 1.4rem; */
+	margin-left: 2rem;
+	margin-right: 2rem;
 	z-index: 2;
+	/* background-color: var(--bg); */
 }
 
 .menu {
@@ -154,11 +196,13 @@ footer {
 }
 
 .brand {
-	position: absolute;
-	font-size: 1rem;
+	/* position: absolute; */
+	font-size: 1.2rem;
+	font-family: "JetBrains Mono";
+	/* font-family: "SuisseIntl"; */
 	/* text-decoration: none; */
-	color: var(--accent);
-	font-weight: 500;
+	color: var(--primary);
+	/* font-weight: 500; */
 }
 
 .brand:hover span {
@@ -167,6 +211,8 @@ footer {
 
 .brand:hover:before {
 	content: "↓↓↓";
+	background-color: var(--accent);
+	color: black;
 }
 
 .brand img {
@@ -179,12 +225,14 @@ footer {
 	flex-direction: column;
 	position: absolute;
 	justify-content: space-between;
-	margin-top: 6rem;
+	margin-top: 3rem;
+	font-family: "JetBrains Mono";
 }
 
 .headline-name {
-	font-size: 1rem;
-	/* font-weight: 600; */
+	margin-top: 2rem;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
 	transition: 0.6s ease;
 	color: var(--primary);
 }
@@ -197,7 +245,7 @@ footer {
 	font-size: 1rem;
 	max-width: 400px;
 	color: var(--primary);
-	padding-top: 2rem;
+	padding-top: 1rem;
 }
 
 .headline-text.show {
@@ -210,14 +258,26 @@ footer {
 }
 
 .work {
-	align-self: flex-end;
-	margin-top: 2rem;
+	/* align-self: flex-end; */
+	/* position: absolute; */
+	/* margin-top: 1.4rem; */
 	font-weight: 600;
 
-	font-family: "JetBrains Mono", monospace;
-	color: var(--accent);
-	padding: 0.4rem;
+	font-family: "JetBrains Mono";
+	font-size: 1.2rem;
+	color: var(--primary);
+	/* padding: 0.4rem; */
+	z-index: 2;
 }
+
+/* .workbg {
+	margin-top: -1.8rem;
+	margin-left: -1rem;
+	height: 34px;
+	width: 80px;
+	background-color: var(--bg);
+	backdrop-filter: blur(10px);
+} */
 
 .work:hover span {
 	display: none;
@@ -225,6 +285,9 @@ footer {
 
 .work:hover:before {
 	content: "↓↓↓";
+	background-color: var(--accent);
+	color: black;
+	padding: 0rem 2rem 0rem 2rem;
 }
 
 .project-container {
@@ -245,7 +308,7 @@ footer {
 }
 
 .project-text {
-	padding: 1.4rem;
+	padding: 1.2rem;
 }
 
 .project-title {
@@ -257,7 +320,18 @@ footer {
 }
 
 .project-container:hover .project-title {
-	color: var(--accent);
+	/* color: var(--accent); */
+	background-color: var(--accent);
+	color: black;
+}
+
+.project-container:hover {
+	transform: translateX(-10px);
+	transition: 0.3s ease;
+}
+
+.project-container {
+	transition: 0.3s ease;
 }
 
 .project-description {
@@ -269,14 +343,14 @@ footer {
 .project-types {
 	display: inline-flex;
 	color: var(--primary);
-	font-size: 1rem;
+	font-size: 0.9rem;
 	margin-left: 0.1rem;
 	font-family: "JetBrains Mono", sans-serif;
 }
 
 .project-type {
 	margin-top: 0.5rem;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	margin-right: 0.6rem;
 	padding: 0.2rem 0.3rem 0.2rem 0.3rem;
 	border: var(--primary) solid 1px;
@@ -287,7 +361,7 @@ footer {
 	width: 200px;
 	height: 100%;
 	object-fit: cover;
-	z-index: 4;
+	/* z-index: 4; */
 	border-left: 1px var(--primary) solid;
 }
 
@@ -358,7 +432,7 @@ footer {
 	margin-top: 0.4rem;
 	margin-bottom: 0;
 	line-height: 1.7rem;
-	font-family: "JetBrains Mono";
+	font-family: "Open Sans";
 	color: var(--primary);
 }
 
@@ -374,12 +448,14 @@ footer {
 .page h2 {
 	margin-top: 1.8rem;
 	color: var(--primary);
+	font-family: "Open Sans";
 }
 .page h3 {
 	font-size: 1rem;
 	margin-top: 1rem;
 	font-weight: 600;
 	color: var(--primary);
+	font-family: "Open Sans";
 }
 
 .page ul {
@@ -428,8 +504,8 @@ footer {
 .next-btn {
 	font-family: "JetBrains Mono", monospace;
 	font-size: 1rem;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	display: inline-block;
 
 	text-decoration: none;
@@ -501,7 +577,7 @@ footer {
 /* lg */
 @media (max-width: 1200px) {
 	.landing {
-		width: 300px;
+		width: 340px;
 	}
 	.blob-1,
 	.blob-2 {
@@ -522,7 +598,7 @@ footer {
 @media (max-width: 992px) {
 	.left-side,
 	.right-wrapper {
-		margin-left: 10%;
+		margin-left: 2rem;
 	}
 	.blobs {
 		position: relative;
@@ -537,10 +613,13 @@ footer {
 		position: relative;
 	}
 
-	.wrapper {
+	.side-wrapper {
 		flex-direction: column;
 	}
-	.brand {
+	.work {
+		display: none;
+	}
+	.navParent {
 		position: relative;
 	}
 	.links {
@@ -599,7 +678,7 @@ footer {
 @media (max-width: 576px) {
 	.landing {
 		margin-top: 15rem;
-		width: 240px;
+		width: 340px;
 	}
 	.left-side,
 	.right-wrapper {
@@ -627,7 +706,7 @@ footer {
 	}
 	.page p {
 		font-size: 0.8rem;
-		line-height: 1.4rem;
+		line-height: 1.2rem;
 	}
 
 	.page ul {
