@@ -18,11 +18,9 @@ export function Home() {
 	return (
 		<body>
 			<div className="home-content">
-				<div className="hero">
+				{/* <div className="hero">
 					<Spline scene="https://prod.spline.design/g6E0pvg40VPkM-8E/scene.splinecode" />
-				</div>
-				<div className="test"></div>
-				<div className="bg"></div>
+				</div> */}
 				{/* <div className="blob-wrapper">
 					<div className="blobs">
 						<div className="blob blob-1">1</div>
@@ -30,8 +28,6 @@ export function Home() {
 					</div>
 				</div> */}
 
-				<div className="hider"></div>
-				<div className="burger-white-bg"></div>
 				<div className="content">
 					<div className="wrapper">
 						<div className="navParent">
@@ -53,68 +49,61 @@ export function Home() {
 							<div className="left-side">
 								<div className="landing">
 									{/* <span className="pronouns">(they/them)</span> */}
-									<div className="headline-name">
-										A multidisciplinary designer and developer focused on
-										crafting&nbsp;
-										<span id="memory">memorable experiences</span> through
-										research, visual design, and storytelling.
+									<div className="blurb">
+										A multidisciplinary designer and developer with a focus on
+										crafting memorable digital experiences through research,
+										visual design, and storytelling.
 									</div>
 								</div>
-								<div className="bottom">
-									<div className="links">
-										<div className="link">
-											<div className="link-logo">
-												<img
-													src={require("../src/Assets/icons/link-logo.png")}
-													alt="project"
-												/>
-											</div>
-											<a href="https://drive.google.com/file/d/1v16MdAD0AdDj4YeK8HdwukBeRNUGvVDZ/view?usp=drive_link">
-												Resume
-											</a>
+								<div className="links">
+									<div className="link">
+										<div className="link-logo">
+											<img
+												src={require("../src/Assets/icons/link-logo.png")}
+												alt="project"
+											/>
 										</div>
-										<div className="link">
-											<div className="link-logo">
-												<img
-													src={require("../src/Assets/icons/link-logo.png")}
-													alt="project"
-												/>
-											</div>
-											<a href="https://www.linkedin.com/in/renzheng/">
-												LinkedIn
-											</a>
+										<a href="https://drive.google.com/file/d/1v16MdAD0AdDj4YeK8HdwukBeRNUGvVDZ/view?usp=drive_link">
+											Resume
+										</a>
+									</div>
+									<div className="link">
+										<div className="link-logo">
+											<img
+												src={require("../src/Assets/icons/link-logo.png")}
+												alt="project"
+											/>
 										</div>
-										<div className="link">
-											<div className="link-logo">
-												<img
-													src={require("../src/Assets/icons/link-logo.png")}
-													alt="project"
-												/>
-											</div>
-											<a href="https://github.com/renzheng11">Github</a>
+										<a href="https://www.linkedin.com/in/renzheng/">LinkedIn</a>
+									</div>
+									<div className="link">
+										<div className="link-logo">
+											<img
+												src={require("../src/Assets/icons/link-logo.png")}
+												alt="project"
+											/>
 										</div>
-										<div className="link">
-											<div className="link-logo">
-												<img
-													src={require("../src/Assets/icons/link-logo.png")}
-													alt="project"
-												/>
-											</div>
-											<a href="https://www.are.na/ren-zheng/channels">Are.na</a>
+										<a href="https://github.com/renzheng11">Github</a>
+									</div>
+									<div className="link">
+										<div className="link-logo">
+											<img
+												src={require("../src/Assets/icons/link-logo.png")}
+												alt="project"
+											/>
 										</div>
+										<a href="https://www.are.na/ren-zheng/channels">Are.na</a>
 									</div>
 								</div>
 							</div>
 							<div className="right-side">
-								<div className="right-wrapper">
-									{/* <div id="project-destination"></div> */}
-									<div className="all-projects">
-										<AllProjects />
-									</div>
-									<footer>
-										Updated March 2024 <span id="heart">♥</span>
-									</footer>
+								{/* <div id="project-destination"></div> */}
+								<div className="all-projects">
+									<AllProjects />
 								</div>
+								<footer>
+									Updated March 2024 <span id="heart">♥</span>
+								</footer>
 							</div>
 						</div>
 					</div>
