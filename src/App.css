@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
 @font-face {
 	font-family: "SuisseIntlRegular";
 	src: url("./fonts/SuisseIntl-Regular.ttf");
@@ -19,11 +14,9 @@
 }
 
 * {
-	/* --font-family: "JetBrains Mono"; */
-	--primary: white;
-	--bg: #212121;
+	--primary: #212121;
+	--bg: white;
 	--accent: #deec48;
-	/* --accent: black; */
 	--gradient1: #ff7bca;
 	--gradient2: #ffc56f;
 }
@@ -33,7 +26,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-family: "JetBrains Mono";
+	font-family: "SuisseIntlRegular";
 	background-color: var(--bg);
 }
 
@@ -48,7 +41,6 @@ body {
 
 .home-content {
 	overflow-x: hidden;
-	/* background-color: var(--bg); */
 }
 
 .wrapper {
@@ -56,7 +48,6 @@ body {
 	flex-direction: column;
 	height: 100vh;
 	width: 100vw;
-	/* justify-content: space-between; */
 }
 
 .side-wrapper {
@@ -69,7 +60,6 @@ body {
 .right-side {
 	display: flex;
 	flex-direction: column;
-	/* margin-right: 2rem; */
 	margin-bottom: 3rem;
 }
 
@@ -90,13 +80,12 @@ body {
 .link {
 	display: flex;
 	margin-top: 0.2rem;
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 .link-logo img {
-	margin-top: 4px;
-	width: 15px;
-	height: 15px;
+	width: 14px;
+	height: 14px;
 }
 
 .link a {
@@ -112,6 +101,12 @@ body {
 .all-projects-container {
 	margin-top: 5rem;
 	margin-bottom: 2rem;
+}
+
+.update-logo {
+	width: 15px;
+	height: 15px;
+	transform: translateY(2px);
 }
 
 h1 {
@@ -150,7 +145,6 @@ h3 {
 	left: 0;
 	margin: auto;
 	width: 100%;
-	/* padding: 2rem; */
 }
 
 .nav {
@@ -175,7 +169,7 @@ h3 {
 }
 
 footer {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	color: var(--primary);
 	align-self: flex-end;
 }
@@ -191,13 +185,9 @@ footer {
 }
 
 .brand {
-	/* position: absolute; */
 	font-size: 1.2rem;
-	font-family: "JetBrains Mono";
-	/* font-family: "SuisseIntl"; */
-	/* text-decoration: none; */
+	font-family: "SuisseIntlRegular";
 	color: var(--primary);
-	/* font-weight: 500; */
 }
 
 .brand:hover span {
@@ -222,12 +212,12 @@ footer {
 	position: absolute;
 	justify-content: space-between;
 	margin-top: 3rem;
-	font-family: "JetBrains Mono";
+	font-family: "SuisseIntlRegular";
 }
 
 .blurb {
 	margin-top: 3rem;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	line-height: 1.5rem;
 	transition: 0.6s ease;
 	color: var(--primary);
@@ -254,12 +244,7 @@ footer {
 }
 
 .work {
-	/* align-self: flex-end; */
-	/* position: absolute; */
-	/* margin-top: 1.4rem; */
-	/* font-weight: 600; */
-
-	font-family: "JetBrains Mono";
+	font-family: "SuisseIntlRegular";
 	font-size: 1.2rem;
 	color: var(--primary);
 	/* padding: 0.4rem; */
@@ -267,24 +252,15 @@ footer {
 	margin-right: 0.1rem;
 }
 
-/* .workbg {
-	margin-top: -1.8rem;
-	margin-left: -1rem;
-	height: 34px;
-	width: 80px;
-	background-color: var(--bg);
-	backdrop-filter: blur(10px);
-} */
-
 .work:hover span {
 	display: none;
 }
 
 .work:hover:before {
 	content: "↓↓↓";
-	background-color: var(--accent);
+	/* background-color: var(--accent); */
 	color: black;
-	padding: 0rem 2.1rem 0rem 2.1rem;
+	padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
 .project-container {
@@ -295,8 +271,6 @@ footer {
 	font-weight: 300;
 	border: var(--primary) 1px solid;
 	margin-top: 1rem;
-
-	/* background-color: var(--bg); */
 }
 
 .project.show {
@@ -323,9 +297,24 @@ footer {
 }
 
 .project-container:hover {
-	transform: translateX(-10px);
+	/* transform: translateX(-10px); */
 	transition: 0.3s ease;
 }
+
+/* .project-shape {
+	display: none;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 100%;
+	object-fit: cover;
+}
+.project-container:hover .project-shape {
+	display: inline;
+}
+.project-container:hover .project-image {
+	display: none;
+} */
 
 .project-container {
 	transition: 0.3s ease;
@@ -342,7 +331,7 @@ footer {
 	color: var(--primary);
 	font-size: 0.9rem;
 	margin-left: 0.1rem;
-	font-family: "JetBrains Mono", sans-serif;
+	font-family: "SuisseIntlRegular", sans-serif;
 }
 
 .project-type {
@@ -358,7 +347,6 @@ footer {
 	width: 200px;
 	height: 100%;
 	object-fit: cover;
-	/* z-index: 4; */
 	border-left: 1px var(--primary) solid;
 }
 
@@ -374,7 +362,6 @@ footer {
 }
 
 .blob {
-	/* border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%; */
 	border-top-left-radius: 70% 64%;
 	border-top-right-radius: 70% 64%;
 	border-bottom-right-radius: 70% 64%;
@@ -382,12 +369,10 @@ footer {
 
 	width: 100vw;
 	height: 180vh;
-	/* left: 0vw; */
 
 	opacity: 0.8;
 	filter: blur(50px);
 
-	/* z-index: -1; */
 	position: absolute;
 	overflow: hidden;
 }
@@ -429,7 +414,7 @@ footer {
 	margin-top: 0.4rem;
 	margin-bottom: 0;
 	line-height: 1.7rem;
-	font-family: "Open Sans";
+	font-family: "SuisseIntlRegular";
 	color: var(--primary);
 }
 
@@ -445,14 +430,14 @@ footer {
 .page h2 {
 	margin-top: 1.8rem;
 	color: var(--primary);
-	font-family: "Open Sans";
+	font-family: "SuisseIntlRegular";
 }
 .page h3 {
 	font-size: 1rem;
 	margin-top: 1rem;
 	font-weight: 600;
 	color: var(--primary);
-	font-family: "Open Sans";
+	font-family: "SuisseIntlRegular";
 }
 
 .page ul {
@@ -479,7 +464,7 @@ footer {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	color: var(--accent);
+	color: var(--primary);
 }
 
 .back-btn img {
@@ -499,26 +484,26 @@ footer {
 }
 
 .next-btn {
-	font-family: "JetBrains Mono", monospace;
+	font-family: "SuisseIntlRegular", monospace;
 	font-size: 1rem;
 	margin-top: 4rem;
 	margin-bottom: 8rem;
 	display: inline-block;
 
 	text-decoration: none;
-	color: var(--accent);
-	border: 1.6px solid var(--accent);
+	color: var(--primary);
+	border: 1.6px solid var(--primary);
 
 	padding: 0.2rem 0.4rem 0.2rem 0.4rem;
 }
 .next-btn:hover {
-	background-color: var(--accent);
+	background-color: var(--primary);
 	text-decoration: none;
 	color: var(--bg);
 }
 
 .about {
-	font-family: "JetBrains Mono", monospace;
+	font-family: "SuisseIntlRegular", monospace;
 	position: absolute;
 	top: 40%;
 	width: 1000px;
@@ -534,7 +519,7 @@ footer {
 	padding-bottom: 20px;
 }
 .about-link a {
-	font-family: "JetBrains Mono", monospace;
+	font-family: "SuisseIntlRegular", monospace;
 	color: var(--primary);
 }
 

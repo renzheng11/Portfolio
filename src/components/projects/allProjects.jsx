@@ -14,7 +14,7 @@ export function AllProjects() {
 						description={project.description}
 						types={project.types}
 						image={project.image}
-						// image={require("../../Assets/kaleido/kaleido-title.png")} // with require}
+						shape={project.shape}
 						link={project.link}
 					/>
 				</div>

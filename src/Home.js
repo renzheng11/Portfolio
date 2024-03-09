@@ -45,15 +45,20 @@ export function Home() {
 								</div>
 							</div>
 						</div>
-						<div class="side-wrapper">
+						<div className="side-wrapper">
 							<div className="left-side">
 								<div className="landing">
 									{/* <span className="pronouns">(they/them)</span> */}
 									<div className="blurb">
 										A multidisciplinary designer and developer with a focus on
-										crafting memorable digital experiences through research,
-										visual design, and storytelling.
+										crafting digital experiences through research, visual
+										design, and storytelling.
 									</div>
+									{/* <img
+										className="flower"
+										src={require("../src/Assets/icons/flower.png")}
+										alt="project"
+									/> */}
 								</div>
 								<div className="links">
 									<div className="link">
@@ -102,8 +107,14 @@ export function Home() {
 									<AllProjects />
 								</div>
 								<footer>
-									Updated March 2024 <span id="heart">♥</span>
+									<img
+										className="update-logo"
+										src={require("../src/Assets/icons/update-logo.png")}
+										alt="project"
+									/>
+									&nbsp; Updated March 2024
 								</footer>
+								{/* <span id="heart">♥</span> */}
 							</div>
 						</div>
 					</div>

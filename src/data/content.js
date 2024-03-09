@@ -56,6 +56,7 @@ const INFO = {
 			description: "Description",
 			types: ["Data Art", "Interaction Design"],
 			image: require("../Assets/noise/noise_final.png"),
+			shape: require("../Assets/noise/noise_shape.png"),
 			link: "/noise",
 		},
 

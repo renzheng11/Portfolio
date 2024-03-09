@@ -4,7 +4,7 @@ import { ProjectType } from "./projectType";
 import "../../App.css";
 
 const Project = (props) => {
-	const { title, description, types, image, link } = props;
+	const { title, description, types, image, shape, link } = props;
 
 	return (
 		<React.Fragment>
@@ -31,6 +31,9 @@ const Project = (props) => {
 						<div className="project-image">
 							<img src={image} alt="project" />
 						</div>
+						{/* <div className="project-shape">
+							<img src={shape} alt="project shape logo" />
+						</div> */}
 					</div>
 				</Link>
 			</div>
