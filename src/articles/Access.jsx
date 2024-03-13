@@ -11,26 +11,54 @@ export function Access() {
 					<h1>Access H2O </h1>
 					<p>Role: Product Designer</p>
 
-					<h3> Context </h3>
-
-					<p>
-						AccessH2O is a non-profit that provides financial assistance to
-						families who are unable to fully pay their water utility bills.
-						Applicant information and documents must be coordinated between the
-						organization and water utility companies. Email was the primary
-						method used to communicate customer information and the status of an
-						application. There was so central location where all this
-						information was stored so the workflow to process applications
-						became very confusing and cumbersome.
-					</p>
 					<h3> Team </h3>
 					<p>
 						This project was a part of Bits of Good, a student organization that
-						creates web-based solutions for local non-profits in Atlanta. As a
-						product designer, I worked together with the project's product
-						manager and engineering manager to lead a team of developers in
-						building the product. 
+						creates web-based solutions for local non-profits in Atlanta. I
+						worked together with the project's product manager and engineering
+						manager to lead a team of 7 developers in an agile cycle. 
 					</p>
+
+					<h3> About </h3>
+
+					<p>
+						AccessH20 is a nonprofit that provides financial assistance,
+						education, and support to individuals and families experiencing
+						temporary financial hardship to avoid water shut-off. They
+						communicate with their customers' respective utility companies to
+						obtain individual information regarding eligibility status to
+						determine if the customer meets the requirements to receive aid.
+					</p>
+
+					<h2>Problem</h2>
+
+					<h3>Context</h3>
+					<p>
+						The process of requesting, communicating, and tracking customer
+						information and documents was time consuming and tedious. All
+						communication was done through long email chains, most of them for
+						uploading documents and requests for status and customer
+						information.
+					</p>
+
+					<h3>Challenge</h3>
+					<p>
+						How might we streamline the communication of customer information
+						between AccessH20 and utility companies?
+					</p>
+
+					<h3>Specific Goals:</h3>
+					<ul>
+						<li>
+							Discover experience paint points, user goals, and user needs.
+						</li>
+						<li>
+							Design a web app with a seamless flow to easily track and update
+							customer information, documents, and eligibility.
+						</li>
+						<li>Create scalable design system for future changes.</li>
+					</ul>
+
 					<div>
 						<h2>Research Goals & Questions</h2>
 						<h3>Goals</h3>
@@ -67,11 +95,34 @@ export function Access() {
 							talked with staff from utility companies to hear about
 							frustrations from their perspective.
 						</p>
+
+						<img
+							src={require("../Assets/access/access-oldflow.png")}
+							alt=""
+							class="page_pic"
+						></img>
+						<p class="caption">Old User Flow</p>
 					</div>
 
+					<h2>Key Findings</h2>
 					<div>
-						<h2>Key Findings</h2>
-						<h3>
+						<h3>User needs and pain points</h3>
+						<ul>
+							<li>
+								Long email chains makes it hard to keep track of different
+								customer information and files.
+							</li>
+							<li>
+								Much of the communication was requesting / sending customer
+								details, related files, and status updates.
+							</li>
+							<li>
+								{" "}
+								Major frustration: the time spend on asking for updates and
+								missing files.
+							</li>
+						</ul>
+						{/* <h3>
 							1. No existing central location to keep track of applicants and
 							their information
 						</h3>
@@ -101,15 +152,31 @@ export function Access() {
 							was a need to both intake all the information (without allowing
 							omission of a certain piece) as well as display the information
 							for review.
-						</p>
+						</p> */}
 					</div>
+					<h3>Design Decisions</h3>
+					<ul>
+						<li>
+							Create a centralized dashboard where the two user groups can view
+							and update all customer info.
+						</li>
+						<li>
+							Include a form that contains all this information and make it
+							available at a glimpse on the dashboard.
+						</li>
+						<li>
+							{" "}
+							Ensure the form prompts for all files, make the process a quick
+							flow.
+						</li>
+					</ul>
 
 					<div>
 						<h2>Solution & Mockups</h2>
-						<h3>User Flow</h3>
+						<h3>User Flows</h3>
 
 						<img
-							src={require("../Assets/access/access_userflow.png")}
+							src={require("../Assets/access/access-userflows.png")}
 							alt=""
 							class="page_pic"
 						></img>
@@ -140,9 +207,18 @@ export function Access() {
 							class="page_pic"
 						></img>
 					</div>
+					<h2>Reflection</h2>
+					<p>
+						From this project, I gained experience working with a team of
+						managers and engineers in an agile process. I found out how
+						important it is to involve engineers early and throughout the design
+						process, as well as handing off detailed design specifications. I
+						learned how to use critiques to improve my designs and being
+						intentional about gathering specific feedback.{" "}
+					</p>
 
 					<div>
-						<Next link={"/noise"} />
+						<Next link={"/calico"} />
 					</div>
 				</div>
 			</div>

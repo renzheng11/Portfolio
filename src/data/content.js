@@ -25,7 +25,7 @@ const INFO = {
 		{
 			title: "LearnQM Visualizations",
 			description: "Description",
-			types: ["Interaction Design", "Web Dev"],
+			types: ["Product Design", "Web Dev"],
 			image: require("../Assets/qm/qm_hero.png"),
 			link: "/qm",
 		},
@@ -37,18 +37,18 @@ const INFO = {
 			link: "/kaleido",
 		},
 		{
+			title: "Access H2O",
+			description: "Description",
+			types: ["User Research", "Product Design"],
+			image: require("../Assets/access/access_home.png"),
+			link: "/accessh20",
+		},
+		{
 			title: "Closet Share",
 			description: "Description",
 			types: ["UI", "Speculative Design"],
-			image: require("../Assets/calico/calico_hero.png"),
+			image: require("../Assets/calico/calico_poster.png"),
 			link: "/calico",
-		},
-		{
-			title: "Access H2O",
-			description: "Description",
-			types: ["UX UI"],
-			image: require("../Assets/access/access_home.png"),
-			link: "/accessh20",
 		},
 
 		{

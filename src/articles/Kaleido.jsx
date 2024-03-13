@@ -9,7 +9,7 @@ export function Kaleido() {
 				<div class="page">
 					<Back />
 					<h1>Film Festival Branding</h1>
-					<p>Case study on film festival visual assets</p>
+					<p>Study on designing film festival visual assets</p>
 
 					<div>
 						<img
@@ -34,7 +34,7 @@ export function Kaleido() {
 						/>
 					</div>
 
-					<Next link={"/calico"} />
+					<Next link={"/accessh20"} />
 				</div>
 			</div>
 		</body>
